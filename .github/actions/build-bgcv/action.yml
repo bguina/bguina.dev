@@ -1,0 +1,21 @@
+name: "Build BGCV"
+
+description: "Build BGCV"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Docker meta
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        images: ghcr.io/bguina/bgcv
+    - name: Build image & Push to registry
+      uses: docker/build-push-action@v5.0.0
+      with:
+        file: ./docker/Dockerfile
+        platforms: linux/amd64
+        context: ./
+        push: true
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}

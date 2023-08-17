@@ -1,0 +1,144 @@
+extends layout
+block content
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.d-print-none
+    .container-fluid
+      a.navbar-brand(href="#")=__('domain')
+      button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+
+      #navbarCollapse.collapse.navbar-collapse
+        ul#anchors.navbar-nav.me-auto.mb-2.mb-md-0
+          li.nav-item
+            a.nav-link(href="#skills" title=__('skills_header'))= '⚙ ' + __('skills_header')
+          li.nav-item
+            a.nav-link(href="#experiences" title=__('experiences_header'))= '🧳 ' + __('experiences_header')
+          li.nav-item
+            a.nav-link(href="#education" title=__('formations_header'))= '🎓 ' + __('formations_header')
+        ul.nav.navbar-nav.pull-right
+          unless __('language') == 'en'
+            li
+              a(href="/en" title="English")
+                img(src="img/flag-en.png" height="20")
+          unless __('language') == 'fr'
+            li
+              a(href="/fr" title="Français")
+                img(src="img/flag-fr.png" height="20")
+
+  #navbar-padding.d-print-none
+
+  .cv.p-3
+    #header-container.row
+      .col-3.d-none.d-print-none.d-sm-block.align-self-center
+        img#photo(src="img/profile-bguina.png")
+      #header.col-12.col-sm-6.col-print-12
+        .text-center
+          h1=__('subject')
+          h2=__('title')
+
+    section#bio.flex-fill.d-print-none
+      .content
+        article.container-fluid.d-sm-flex
+          .flex-fill.p-2
+            each paragraph in __('bio')
+              p=paragraph
+          .align-self-center.text-nowrap.p-2
+            ul.list-unstyled
+              li
+                h5(title=__('period_title'))='✅ ' + __('period')
+              li
+                h5(title=__('sites_title'))='📍 ' + __('sites')
+              li.d-none.d-print-block
+                h5(title=__('email_title'))='📧 '+ __('email')
+              li.d-print-none
+                h5(title=__('email_title'))
+                  |📧 
+                  a(href="mailto:"+__('email'))=__('email')
+              li
+                each link in __('links')
+                  a(href=link.url title=link.title)
+                    img.icon(src="/img/" + link.icon)
+              li.d-none
+                h5='🌐 https://' + __('domain')
+    .row
+      .col-lg-3
+        section#skills
+          h3=__('skills_header')
+          .row.content
+            .col-12.col-print-12
+              .row
+                .col-6.col-print-4.col-sm-4.col-md-3.col-lg-12
+                  article
+                    h5= __('languages_header')
+                    ul.list-unstyled.row
+                      each language in __('languages')
+                        li.col-12.col-md-12.col-lg-12
+                          span=language
+                .col-6.col-print-8.col-sm-8.col-md-9.col-lg-12
+                  article
+                    h5= __('methodology_header')
+                    ul.list-unstyled.row
+                      each metholology in __('methodology')
+                        li.col-12.col-print-6.col-sm-6.col-md-4.col-lg-12
+                          span=metholology
+            .col-12.col-print-12.col-md-12.col-print-6.col-lg-12
+              article
+                h5=__('languages_and_tools_header')
+                ul.list-unstyled.row
+                  each skill in __('skills')
+                    li.col-6.col-print-4.col-sm-4.col-md-3.col-lg-12
+                      img.align-self-center.align-self-lg-start.icon(src="/img/" + skill.icon alt=skill.label)
+                      span.d-inline-block=skill.label
+
+      .col-12.col-md-12.col-lg-9
+        section#experiences
+          h3=__('experiences_header')
+          .container-fluid.content
+            each xp in __('experiences')
+              article.p-2
+                .d-flex
+                  .flex-grow-1
+                    h4=xp.title
+                    h5=xp.subtitle
+                  h5.datetime=xp.startdate + ' - ' + xp.enddate
+                .row
+                  .container-fluid
+                    span=xp.intro
+                    if xp.tasks
+                      ul
+                        each task in xp.tasks ? xp.tasks : []
+                          li=task
+                    if xp.technical_stack
+                      b=__('technical_stack') 
+                      = xp.technical_stack
+            each xp in __('older_experiences')
+              article.p-2
+                .d-flex
+                  .flex-grow-1
+                    h4=xp.title
+                    h5=xp.subtitle
+                  h5.datetime=xp.startdate + ' - ' + xp.enddate
+                .row
+                  .container-fluid
+                    span=xp.intro
+                    if xp.tasks
+                      ul
+                        each task in xp.tasks ? xp.tasks : []
+                          li=task
+                    if xp.technical_stack
+                      b=__('technical_stack') 
+                      = xp.technical_stack
+
+        section#education
+          h3=__('formations_header')
+          article.container-fluid.content
+            ul.list-unstyled
+              each edu in __('education')
+                li.p-2
+                  .d-flex
+                    .flex-grow-1
+                      h4=edu.title
+                      h5=edu.establishment
+                    h5.datetime
+                      span=edu.period
+                  if edu.description
+                    p-2=edu.description

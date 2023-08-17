@@ -1,0 +1,25 @@
+{
+  "name": "bguina.dev",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd app && node ./server",
+    "postinstall": "cd app/resources && yarn install"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "^2.6.9",
+    "express": "^4.18.2",
+    "express-session": "^1.14.1",
+    "i18n-2": "^0.6.3",
+    "morgan": "^1.10.0",
+    "node-sass-middleware": "^1.0.1",
+    "pug": "^3.0.2",
+    "puppeteer": "^21.9.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "engines": {
+    "yarn": ">= 1.0.0"
+  }
+}

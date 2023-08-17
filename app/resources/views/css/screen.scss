@@ -1,0 +1,27 @@
+html, body {
+  background-image: url('/img/bg.png');
+}
+
+$body-width: 992px;
+
+.cv {
+  max-width: $body-width;
+  margin: 16px auto 32px;
+  background-image: url('/img/bg-paper.png');
+
+  @media (max-width: 992px) {
+    margin: auto;
+  }
+}
+
+.content {
+  box-shadow: 0px 0px .2em 0px rgba(0,0,0,0.10);
+}
+
+#navbar-padding {
+  transition: padding-top 0.2s ease;
+  padding-top: 4em;
+  @media (max-width: 992px) {
+    padding-top: 2.6em;
+  }
+}

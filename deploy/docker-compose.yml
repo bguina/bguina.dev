@@ -1,0 +1,5 @@
+version: "3.9"
+services:
+  bgcv:
+    container_name: bgcv
+    image: ghcr.io/bguina/bgcv:main

@@ -1,0 +1,14 @@
+services:
+  bgcv:
+    platform: "linux/x86_64"
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      # Mount volumes of generated files directories.
+      - ../app/resources/public/css:/usr/src/bgcv/app/resources/public/css
+      - ../app/resources/public/pdf:/usr/src/bgcv/app/resources/public/pdf
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8080:8080

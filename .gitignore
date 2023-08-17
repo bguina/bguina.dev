@@ -1,0 +1,12 @@
+.idea
+.DS_Store
+*.log
+.**secrets**
+
+# ignore downloaded dependencies
+**/node_modules
+**/public/vendor
+
+# ignore generated files
+**/public/css
+**/public/pdf
