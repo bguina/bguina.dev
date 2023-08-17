@@ -1,0 +1,146 @@
+extends layout
+block content
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.d-print-none
+    .container-fluid
+      a.navbar-brand(href="#")=__('domain')
+      button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+
+      #navbarCollapse.collapse.navbar-collapse
+        ul#anchors.navbar-nav.me-auto.mb-2.mb-md-0
+          li.nav-item
+            a.nav-link(href="#skills" title=__('skills_header'))= '⚙ ' + __('skills_header')
+          li.nav-item
+            a.nav-link(href="#experiences" title=__('experiences_header'))= '🧳 ' + __('experiences_header')
+          li.nav-item
+            a.nav-link(href="#education" title=__('formations_header'))= '🎓 ' + __('formations_header')
+        //ul.nav.navbar-nav.pull-right
+          li
+            a(href="/cv.pdf" title=__('printable_pdf')) 🖶
+          li.hidden-xs
+            label(for="navbar-checkbox" aria-hidden="true")
+              span.pin(title=__('pin_navigation')) 🏢
+              span.unpin(title=__('hide_navigation')) ⨯
+
+  #navbar-padding.d-print-none
+
+  .cv.p-3
+    #header-container.row
+      .col-3.align-self-center
+        img#photo.hidden-xs(src="img/profile-pic.png")
+      #header.col-6
+        .text-center
+          h1=__('subject')
+          h2=__('title')
+      .col-3
+
+    section#bio.flex-fill
+      .content
+        article.container-fluid.d-md-flex.p-2
+          .flex-fill.d-print-none
+            each paragraph in __('bio')
+              p=paragraph
+          .align-self-center.text-nowrap.p-2
+            ul.list-unstyled
+              li
+                h5(title=__('sites_title'))='🏢 ' + __('sites')
+              li
+                h5(title=__('period_title'))='📅 ' + __('period')
+              //li
+                h5(title=__('phone_title'))='📱 ' + __('phone')
+              li
+                h5(title=__('email_title'))
+                  |📧 
+                  a(href="mailto:"+__('email'))=__('email')
+              li.d-print-none
+                each link in __('links')
+                  a(href=link.url title=link.title)
+                    img.icon(src="/img/" + link.icon)
+              li.d-none.d-print-block
+                h5='🌐 ' + __('domain')
+    .row
+      .col-md-4
+        section#skills
+          h3='⚙️ ' + __('skills_header')
+          .row.content
+            .col-4.col-md-12
+              article
+                h5= __('languages_header')
+                ul.list-unstyled
+                  each language in __('languages')
+                    li.row
+                      .flex-fill
+                        span=language
+              
+              article
+                h5= __('methodology_header')
+                ul.list-unstyled
+                  each metholology in __('methodology')
+                    li.row
+                      .flex-fill
+                        span=metholology
+            .col-8.col-md-12
+              article
+                h5=__('languages_and_tools_header')
+                ul.list-unstyled.row
+                  each skill in __('skills')
+                    li.col-6.col-md-12
+                      img.align-self-center.align-self-md-start.icon(src="/img/" + skill.icon alt=skill.label)
+                      span.d-inline-block=skill.label
+
+      .col-md-8
+        section#experiences
+          h3='🧳 ' + __('experiences_header')
+          .container-fluid.content
+            each xp in __('experiences')
+              article.p-2
+                .d-flex
+                  .flex-grow-1
+                    h4=xp.title
+                    h5=xp.subtitle
+                  h5.datetime
+                    span=xp.startdate
+                    span=xp.enddate
+                .row
+                  .container-fluid
+                    span=xp.intro
+                    if xp.tasks
+                      ul
+                        each task in xp.tasks ? xp.tasks : []
+                          li=task
+                    if xp.technical_stack
+                      b=__('technical_stack') 
+                      = xp.technical_stack
+            each xp in __('older_experiences')
+              article.p-2
+                .d-flex
+                  .flex-grow-1
+                    h4=xp.title
+                    h5=xp.subtitle
+                  h5.datetime
+                    span=xp.startdate
+                    span=xp.enddate
+                .row
+                  .container-fluid
+                    span=xp.intro
+                    if xp.tasks
+                      ul
+                        each task in xp.tasks ? xp.tasks : []
+                          li=task
+                    if xp.technical_stack
+                      b=__('technical_stack') 
+                      = xp.technical_stack
+
+        section#education
+          h3='🎓 ' + __('formations_header')
+          .container-fluid.content
+            ul.list-unstyled
+              li
+                article.p-2
+                  .d-flex
+                    .flex-grow-1
+                      h4 Ecole d'Expertise en Technologies de l’Information
+                      h5 à EPITECH
+                    h5.datetime
+                        span de 2010 à 2014
+  br

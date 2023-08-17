@@ -1,0 +1,46 @@
+html, body {
+  background-image: url('/img/bg.png');
+}
+  $body-width: 992px;
+
+.cv {
+  max-width: $body-width;
+  margin: auto;
+  background-image: url('/img/bg-paper.png');
+}
+
+
+#navbar-padding {
+  transition: padding-top 0.2s ease;
+  padding-top: 5em;
+  @media (max-width: 768px) {
+    padding-top: 3.8em;
+  }
+  @media (min-width: 767px) and (max-width: 992px) {
+    padding-top: 0em;
+  }
+}
+
+$body-width: 992px;
+#wrapper {
+  max-width: $body-width;
+  margin: auto;
+  background-image: url('/img/bg-paper.png');
+  padding-bottom: 5em;
+  @media (min-width: 992px) {
+    margin-bottom: 2em;
+  }
+  @media (max-width: 767px) {
+    padding-left:0;
+    padding-right:0;
+  }
+
+  & > * {
+    padding:0;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    @media (max-width: 767px) {
+      padding: 0;
+    } 
+  }
+}

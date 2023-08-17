@@ -1,0 +1,206 @@
+{
+ "domain": "bguina.dev",
+ "subject": "Benoit Guina",
+ "title": "Développeur Android",
+ "biography_header": "A propos",
+ "experiences_header": "Expériences professionnelles",
+ "skills_header": "Compétences",
+ "formations_header": "Formations",
+ "methodology_header": "Méthodologie",
+ "languages_header": "Langues",
+ "languages_and_tools_header": "Languages et outils",
+ "technical_stack": "Environnement technique : ",
+ "links": [
+  {
+   "icon": "linkedin.png",
+   "url": "https://www.linkedin.com/in/bguina",
+   "title": "Profil LinkedIn"
+  },
+  {
+   "icon": "github.png",
+   "url": "http://www.github.com/bguina",
+   "title": "Profil GitHub"
+  },
+  {
+   "icon": "gdev.png",
+   "url": "https://developers.google.com/profile/u/bguina",
+   "title": "Profil Google Developers"
+  }
+ ],
+ "bio": [
+  "Développeur passionné et particulièrement expérimenté en Android, je me forme régulièrement à des stacks techniques qui me semblent incontournables tels que Android Compose.",
+  "Je recherche actuellement une mission me permettant d'encadrer une équipe et transmettre mes connaissances en Android, de contribuer à des projets Kotlin Multiplatform ou éventuellement de monter en compétences en backend Kotlin (Spring Boot, Vert.X, KTor)."
+ ],
+ "sites_title": "Sites",
+ "period_title": "Disponibilité",
+ "email_title": "Adresse e-mail",
+ "sites": "Lille, Paris + télétravail",
+ "period": "Actuellement indisponible",
+ "email": "benoit.guina@gmail.com",
+ "methodology": [
+  "SCRUM, Kanban",
+  "Domain-driven design",
+  "Principes SOLID",
+  "Test-driven development",
+  "CI / CD"
+ ],
+ "languages": [
+  "Français natif",
+  "Anglais courant"
+ ],
+ "skills": [
+  {
+   "icon": "android_studio.png",
+   "label": "Android Studio"
+  },
+  {
+   "icon": "kotlin.webp",
+   "label": "Java, Kotlin"
+  },
+  {
+   "icon": "ccpp.png",
+   "label": "C, C++, OpenGL"
+  },
+  {
+   "icon": "python-original.png",
+   "label": "Python, Django"
+  },
+  {
+   "icon": "nodejs-original.png",
+   "label": "Node, Express"
+  },
+  {
+   "icon": "javascript-original.png",
+   "label": "JS, Typescript"
+  },
+  {
+   "icon": "html5-original.png",
+   "label": "HTML5, CSS3"
+  },
+  {
+   "icon": "db.png",
+   "label": "SQL, MongoDB"
+  },
+  {
+   "icon": "git-original.png",
+   "label": "Git, bash"
+  },
+  {
+   "icon": "cicd.png",
+   "label": "GitHub, Bitrise"
+  }
+ ],
+ "experiences": [
+  {
+   "startdate": "de Août 2021",
+   "enddate": "à Octobre 2022",
+   "title": "Développeur Android",
+   "subtitle": "en freelance pour Louis Vuitton",
+   "intro": "Renfort au développement de l’application LV Connect permettant l'usage d’objets connectés.",
+   "tasks": [
+    "Développement de fonctionnalités sur la nouvelle montre Tambour Horizon et sur les nouveaux écouteurs Horizon Light-Up,",
+    "enregistrement et remontée des données de santé collectées vers Google Fit et Huawei Health Kit,",
+    "administration des app stores pour les mises en conformité pré-déploiements."
+   ],
+   "technical_stack": "Kotlin CLEAN+MVVM, RX2, LiveData, Retrofit, OkHttp, Room, Hilt, Jetpack, BLE, GMS / HMS, Bitrise, Sonar"
+  },
+  {
+   "startdate": "de Octobre 2019",
+   "enddate": "à Juillet 2021",
+   "title": "Développeur Android",
+   "subtitle": "en freelance pour Decathlon",
+   "intro": "Modernisation du parcours vendeur Test Produit et création du parcours Location.",
+   "tasks": [
+    "Refonte du Test Produit \"MVP\" en module Kotlin sous architecture moderne,",
+    "intégration avec la version de l'API permettant l'internationalisation du service,",
+    "intégration du module dans l’application de vente omnicanal,",
+    "création d'une la première expérience vendeur permettant de souscrire et de gérer des locations de vélos enfant."
+   ],
+   "technical_stack": "Kotlin CLEAN+MVVM, RX2, Retrofit, OkHttp, Room, Dagger2, Jetpack, Sonar"
+  },
+  {
+   "startdate": "de Décembre 2017",
+   "enddate": "à Septembre 2019",
+   "title": "Développeur Android",
+   "subtitle": "en CDI chez Niji pour Decathlon et Domyos",
+   "intro": "Contributions à l’offre de solutions applicatives disponibles aux vendeurs.",
+   "tasks": [
+    "Création de l'application permettant la consultation des caractéristiques techniques, l'aide au choix et la demande d'essai de vélos haut de gamme,",
+    "création d’une application Android permettant aux vendeurs de traiter les demandes d'essais des clients laissées dans leur magasin via les bornes,",
+    "évolution de l’application pour permettre aux vendeurs de configurer leurs propres ensembles d’articles de toute nature de produit, notamment pour une mise en avant de nouveaux produits sur les showrooms Domyos."
+   ],
+   "technical_stack": "Kotlin MVVM, RX2, Retrofit, OkHttp, Room, Dagger2, Firebase, Kibana"
+  },
+  {
+   "startdate": "de Janvier 2017",
+   "enddate": "à Oct 2017",
+   "title": "Développeur Android",
+   "subtitle": "en CDI chez Niji pour Decathlon",
+   "intro": "Renfort au développement de l’application grand-public.",
+   "tasks": [
+    "Développement de nouvelles fonctionnalités propres à certains pays,",
+    "refactorisation de composants, correctifs."
+   ],
+   "technical_stack": "Java MVVM, RX2, Retrofit, OkHttp, Realm, Dagger2, Butterknife"
+  },
+  {
+   "startdate": "de Juillet 2015",
+   "enddate": "à Octobre 2016",
+   "title": "Développeur Android",
+   "subtitle": "en CDI chez Equisense",
+   "intro": "Travaux d'élaboration du capteur inertiel \"Motion\" permettant la capture et le traitement de données locomotrices durant un entrainement équestre.",
+   "tasks": [
+    "\"PoC\" permettant de démontrer le bon fonctionnement et la fiabilité du contrôle et de la captation des données,",
+    "première version de l'API afin d'y traiter les données pour en dériver les indicateurs de santé,",
+    "tests en écuries et résolution des bogues."
+   ],
+   "technical_stack": "Java MVP, Bluetooth Gatt, Ionic, Parse / Firebase, Ruby, Calabash"
+  }
+ ],
+ "older_experiences": [
+  {
+   "startdate": "de Octobre 2012",
+   "enddate": "à Février 2013",
+   "title": "Développeur PHP / Javascript",
+   "subtitle": "en freelance pour AlerteApéro",
+   "intro": "Production un livrable permettant le déploiement d'un e-commerce Prestashop sur-mesure pour la franchise AlerteApéro.",
+   "tasks": [
+    "Surcharge des contrôleurs de la version Prestashop originale,",
+    "développement d'un back-office sous forme de module Prestashop,",
+    "service d'envoi de SMS afin de notifier les transporteurs des commandes,",
+    "implémentation des paiements chiffrés via le kit CMCIC,",
+    "intégration de composants visuels dynamiques."
+   ],
+   "technical_stack": "Prestashop, PHP5, Javascript, jQuery, SQL, Twillio"
+  },
+  {
+   "startdate": "de Juin 2012",
+   "enddate": "à Juillet 2013",
+   "title": "Développeur Python",
+   "subtitle": "en freelance pour 9h37",
+   "intro": "Développement logiciel facilitant la télé-consultation médicale :",
+   "tasks": [
+    "Développement du logiciel permettant le pont de données entre un périphérique médical USB avec un pratiquant tiers distant par XMPP chiffré,",
+    "création de l'UI cross-platform en pyQt et wxPython,",
+    "implémentation des paiements chiffrées via le kit CMCIC,",
+    "packaging et obfuscation du code source propriétaire Python."
+   ]
+  },
+  {
+   "startdate": "de Juillet 2011",
+   "enddate": "à Décembre 2011",
+   "title": "Développeur Python / Javascript",
+   "subtitle": "en stage pour 9h37",
+   "intro": "Développement de bibliothèques web facilitant la télé-consultation médicale :",
+   "tasks": [
+    "un daemon python permettant l'utilisation d'une page web comme interface pour l'execution de code arbitraire,",
+    "une bibliothèque javascript permettant l'utilisation des logiciels d'Accès aux Téléservices de l'Assurance Maladie (ATSAM) natifs depuis une page web par le biais du daemon, permettant ainsi des intéractions entre un serveur web et les lecteurs de cartes à puce des praticiens de santé."
+   ]
+  }
+ ],
+ "pin_navigation": "Epingler la navigation",
+ "hide_navigation": "Masquer la navigation",
+ "phone_title": "Téléphone",
+ "more_experiences": "more_experiences",
+ "other": "other"
+}

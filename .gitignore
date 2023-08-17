@@ -1,0 +1,6 @@
+*.log
+node_modules
+public/bower_components
+public/css/*.css
+public/cv.pdf
+
