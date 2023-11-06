@@ -98,8 +98,8 @@
    "subtitle": "en freelance pour Louis Vuitton",
    "intro": "Renfort sur l’application LV Connect qui permet l'usage des objets connectés LV.",
    "tasks": [
-    "Développement de nombreuses fonctionnalités sur la nouvelle montre Tambour Horizon et sur les nouveaux écouteurs Horizon Light-Up,",
-    "enregistrement et remontée des données de santé collectées vers Google Fit et Huawei Health Kit,",
+    "Développement de nombreuses fonctionnalités propres à la montre Tambour Horizon et aux écouteurs Horizon Light-Up,",
+    "transfert des données de santé collectées vers Google Fit et Huawei Health Kit,",
     "administration des app stores pour les mises en conformité pré-déploiements."
    ],
    "technical_stack": "Kotlin CLEAN+MVVM, RX2, LiveData, Retrofit, OkHttp, Room, Hilt, Jetpack, BLE, GMS / HMS, Bitrise, Sonar"
@@ -111,7 +111,7 @@
    "subtitle": "en freelance pour Decathlon",
    "intro": "Modernisation du parcours vendeur Test Produit et création du parcours Location.",
    "tasks": [
-    "Refonte de Test Produit \"MVP\" en module Kotlin sous architecture moderne,",
+    "Refonte du MVP de Test Produit en module Kotlin sous architecture moderne,",
     "intégration du module dans l’application de vente omnicanal,",
     "intégration avec la version de l'API permettant l'internationalisation du service,",
     "création de la première expérience Vendeur permettant de souscrire et de gérer des locations de vélos enfant."
@@ -178,13 +178,13 @@
    "enddate": "à Juillet 2013",
    "title": "Développeur Python",
    "subtitle": "en freelance pour 9h37",
-   "intro": "Développement logiciel facilitant la télé-consultation médicale :",
+   "intro": "Développementd logiciels système et web facilitant la télé-consultation médicale :",
    "tasks": [
     "Développement du service permettant le pont de données entre un périphérique médical USB avec un pratiquant tiers distant par XMPP chiffré,",
     "création de l'UI cross-platform en permettant le contrôle,",
-    "packaging et obfuscation du code source propriétaire Python."
+    "obfuscation et packaging msi/deb/rpm du code source."
    ],
-   "technical_stack": "Python 2.7, CPython, pyQt, wxPython, XMPP"
+   "technical_stack": "Python 2.7, C, CPython, pyQt, wxPython, XMPP"
   },
   {
    "startdate": "de Juillet 2011",
