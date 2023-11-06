@@ -96,9 +96,9 @@
    "enddate": "à Octobre 2022",
    "title": "Développeur Android",
    "subtitle": "en freelance pour Louis Vuitton",
-   "intro": "Renfort au développement de l’application LV Connect permettant l'usage d’objets connectés.",
+   "intro": "Renfort sur l’application LV Connect qui permet l'usage des objets connectés LV.",
    "tasks": [
-    "Développement de fonctionnalités sur la nouvelle montre Tambour Horizon et sur les nouveaux écouteurs Horizon Light-Up,",
+    "Développement de nombreuses fonctionnalités sur la nouvelle montre Tambour Horizon et sur les nouveaux écouteurs Horizon Light-Up,",
     "enregistrement et remontée des données de santé collectées vers Google Fit et Huawei Health Kit,",
     "administration des app stores pour les mises en conformité pré-déploiements."
    ],
@@ -111,10 +111,10 @@
    "subtitle": "en freelance pour Decathlon",
    "intro": "Modernisation du parcours vendeur Test Produit et création du parcours Location.",
    "tasks": [
-    "Refonte du Test Produit \"MVP\" en module Kotlin sous architecture moderne,",
-    "intégration avec la version de l'API permettant l'internationalisation du service,",
+    "Refonte de Test Produit \"MVP\" en module Kotlin sous architecture moderne,",
     "intégration du module dans l’application de vente omnicanal,",
-    "création d'une la première expérience vendeur permettant de souscrire et de gérer des locations de vélos enfant."
+    "intégration avec la version de l'API permettant l'internationalisation du service,",
+    "création de la première expérience Vendeur permettant de souscrire et de gérer des locations de vélos enfant."
    ],
    "technical_stack": "Kotlin CLEAN+MVVM, RX2, Retrofit, OkHttp, Room, Dagger2, Jetpack, Sonar"
   },
@@ -138,8 +138,8 @@
    "subtitle": "en CDI chez Niji pour Decathlon",
    "intro": "Renfort au développement de l’application grand-public.",
    "tasks": [
-    "Développement de nouvelles fonctionnalités propres à certains pays,",
-    "refactorisation de composants, correctifs."
+    "Développement sur la partie Q&A ainsi que sur de nouvelles fonctionnalités propres à certains pays,",
+    "maintenance applicative (suivi de la production, refactorisations, correctifs)."
    ],
    "technical_stack": "Java MVVM, RX2, Retrofit, OkHttp, Realm, Dagger2, Butterknife"
   },
@@ -150,7 +150,7 @@
    "subtitle": "en CDI chez Equisense",
    "intro": "Travaux autour du capteur inertiel \"Motion\" permettant la capture et le traitement de données locomotrices durant un entrainement équestre.",
    "tasks": [
-    "Preuve de concept Android permettant de démontrer le bon fonctionnement et la fiabilité du contrôle et de la captation des données,",
+    "Preuve de concept permettant de démontrer le bon fonctionnement et la fiabilité du contrôle et de la captation des données,",
     "première version de l'API afin d'y traiter les données pour en dériver les indicateurs de santé,",
     "mise à l'épreuve du capteur et de l'application par des tests en écuries."
    ],
@@ -180,8 +180,8 @@
    "subtitle": "en freelance pour 9h37",
    "intro": "Développement logiciel facilitant la télé-consultation médicale :",
    "tasks": [
-    "Développement du logiciel permettant le pont de données entre un périphérique médical USB avec un pratiquant tiers distant par XMPP chiffré,",
-    "création de l'UI cross-platform,",
+    "Développement du service permettant le pont de données entre un périphérique médical USB avec un pratiquant tiers distant par XMPP chiffré,",
+    "création de l'UI cross-platform en permettant le contrôle,",
     "packaging et obfuscation du code source propriétaire Python."
    ],
    "technical_stack": "Python 2.7, CPython, pyQt, wxPython, XMPP"
@@ -191,7 +191,7 @@
    "enddate": "à Décembre 2011",
    "title": "Développeur Python / Javascript",
    "subtitle": "en stage pour 9h37",
-   "intro": "Développement de bibliothèques web facilitant la télé-consultation médicale :",
+   "intro": "Développement de briques logicielles facilitant la télé-consultation médicale :",
    "tasks": [
     "un daemon python permettant l'utilisation d'une page web comme interface pour l'execution de code arbitraire,",
     "une bibliothèque javascript permettant l'utilisation des logiciels d'Accès aux Téléservices de l'Assurance Maladie (ATSAM) natifs depuis une page web par le biais du daemon, permettant ainsi des intéractions entre un serveur web et les lecteurs de cartes à puce des praticiens de santé."
