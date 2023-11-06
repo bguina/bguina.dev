@@ -148,11 +148,11 @@
    "enddate": "à Octobre 2016",
    "title": "Développeur Android",
    "subtitle": "en CDI chez Equisense",
-   "intro": "Travaux d'élaboration du capteur inertiel \"Motion\" permettant la capture et le traitement de données locomotrices durant un entrainement équestre.",
+   "intro": "Travaux autour du capteur inertiel \"Motion\" permettant la capture et le traitement de données locomotrices durant un entrainement équestre.",
    "tasks": [
-    "\"PoC\" permettant de démontrer le bon fonctionnement et la fiabilité du contrôle et de la captation des données,",
+    "Preuve de concept Android permettant de démontrer le bon fonctionnement et la fiabilité du contrôle et de la captation des données,",
     "première version de l'API afin d'y traiter les données pour en dériver les indicateurs de santé,",
-    "tests en écuries et résolution des bogues."
+    "mise à l'épreuve du capteur et de l'application par des tests en écuries."
    ],
    "technical_stack": "Java MVP, Bluetooth Gatt, Ionic, Parse / Firebase, Ruby, Calabash"
   }
@@ -171,7 +171,7 @@
     "implémentation des paiements chiffrés via le kit CMCIC,",
     "intégration de composants visuels dynamiques."
    ],
-   "technical_stack": "Prestashop, PHP5, Javascript, jQuery, SQL, Twillio"
+   "technical_stack": "PHP5 MVC, Prestashop, Javascript, jQuery, SQL, Twillio"
   },
   {
    "startdate": "de Juin 2012",
@@ -181,10 +181,10 @@
    "intro": "Développement logiciel facilitant la télé-consultation médicale :",
    "tasks": [
     "Développement du logiciel permettant le pont de données entre un périphérique médical USB avec un pratiquant tiers distant par XMPP chiffré,",
-    "création de l'UI cross-platform en pyQt et wxPython,",
-    "implémentation des paiements chiffrées via le kit CMCIC,",
+    "création de l'UI cross-platform,",
     "packaging et obfuscation du code source propriétaire Python."
-   ]
+   ],
+   "technical_stack": "Python 2.7, CPython, pyQt, wxPython, XMPP"
   },
   {
    "startdate": "de Juillet 2011",
@@ -195,7 +195,8 @@
    "tasks": [
     "un daemon python permettant l'utilisation d'une page web comme interface pour l'execution de code arbitraire,",
     "une bibliothèque javascript permettant l'utilisation des logiciels d'Accès aux Téléservices de l'Assurance Maladie (ATSAM) natifs depuis une page web par le biais du daemon, permettant ainsi des intéractions entre un serveur web et les lecteurs de cartes à puce des praticiens de santé."
-   ]
+   ],
+   "technical_stack": "Python 2.7, CPython, Javascript"
   }
  ],
  "pin_navigation": "Epingler la navigation",
