@@ -28,8 +28,8 @@
   }
  ],
  "bio": [
-  "Développeur passionné et expert Android, je me mets régulièrement à jours sur diverses stacks techniques front, back et systêmes qui me semblent incontournables.",
-  "Je recherche actuellement une mission me permettant de contribuer à des projets Kotlin Multiplatform / Compose Multiplatform et éventuellement d'éprouver mes compétences en backend Kotlin (Vert.X, KTor)."
+  "Développeur passionné et expert Android, je me tiens à jour sur des stacks techniques qui m'entretiennent à une grande polyvalence web, back, système et mobile.",
+  "Je suis disponible pour une mission me permettant de contribuer à des projets Kotlin Multiplatform / Compose Multiplatform et éventuellement d'éprouver mes compétences en backend Kotlin (Vert.X, KTor)."
  ],
  "sites_title": "Sites",
  "period_title": "Disponibilité",
@@ -163,7 +163,7 @@
    "enddate": "à Février 2013",
    "title": "Développeur PHP / Javascript",
    "subtitle": "en freelance pour AlerteApéro",
-   "intro": "Production un livrable permettant le déploiement d'un e-commerce Prestashop sur-mesure pour la franchise AlerteApéro.",
+   "intro": "Production d'un livrable permettant le déploiement d'un e-commerce Prestashop personnalisable aux franchisés.",
    "tasks": [
     "Surcharge des contrôleurs de la version Prestashop originale,",
     "développement d'un back-office sous forme de module Prestashop,",
