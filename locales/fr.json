@@ -126,7 +126,7 @@
    "intro": "Contributions à l’offre de solutions applicatives disponibles aux vendeurs.",
    "tasks": [
     "Création de l'application permettant la consultation des caractéristiques techniques, l'aide au choix et la demande d'essai de vélos haut de gamme,",
-    "création d’une application Android permettant aux vendeurs de traiter les demandes d'essais des clients laissées dans leur magasin via les bornes,",
+    "création d’une application Android permettant aux vendeurs de traiter les demandes d'essais,",
     "évolution de l’application pour permettre aux vendeurs de configurer leurs propres ensembles d’articles de toute nature de produit, notamment pour une mise en avant de nouveaux produits sur les showrooms Domyos."
    ],
    "technical_stack": "Kotlin MVVM, RX2, Retrofit, OkHttp, Room, Dagger2, Firebase, Kibana"
