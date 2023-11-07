@@ -38,11 +38,11 @@
  "period": "Disponible ASAP",
  "email": "benoit.guina@gmail.com",
  "methodology": [
-  "SCRUM, Kanban",
-  "Domain-driven design",
+  "Agile (SCRUM, Kanban)",
   "Principes SOLID",
+  "Domain-driven design",
   "Test-driven development",
-  "CI / CD"
+  "CI & CD"
  ],
  "languages": [
   "Français natif",
@@ -96,11 +96,13 @@
    "enddate": "à Octobre 2022",
    "title": "Développeur Android",
    "subtitle": "en freelance pour Louis Vuitton",
-   "intro": "Renfort sur l’application LV Connect qui permet l'usage des objets connectés LV.",
+   "intro": "Renfort à l'équipe LV Connect en vue de la sortie de nouveaux objets connectés (4 dév. Android).",
    "tasks": [
-    "Développement de nombreuses fonctionnalités propres à la montre Tambour Horizon et aux écouteurs Horizon Light-Up,",
-    "transfert des données de santé collectées vers Google Fit et Huawei Health Kit,",
-    "administration des app stores pour les mises en conformité pré-déploiements."
+    "Aide à l'estimation des tâches et à la gestion du backlog,",
+    "réalisation de nombreuses fonctionnalités et intéractions Bluetooth,",
+    "administration des déploiements sur Google Play et Huawei App Gallery,",
+    "suivi et maintenance des versions en production,",
+    "documentation et passation des connaissances."
    ],
    "technical_stack": "Kotlin CLEAN+MVVM, RX2, LiveData, Retrofit, OkHttp, Room, Hilt, Jetpack, BLE, GMS / HMS, Bitrise, Sonar"
   },
@@ -109,12 +111,14 @@
    "enddate": "à Juillet 2021",
    "title": "Développeur Android",
    "subtitle": "en freelance pour Decathlon",
-   "intro": "Modernisation du parcours vendeur Test Produit et création du parcours Location.",
+   "intro": "Modernisation du parcours Vendeur Test Produit et création du parcours Location (1 dév. Android).",
    "tasks": [
-    "Refonte du MVP de Test Produit en module Kotlin sous architecture moderne,",
-    "intégration du module dans l’application de vente omnicanal,",
-    "intégration avec la version de l'API permettant l'internationalisation du service,",
-    "création de la première expérience Vendeur permettant de souscrire et de gérer des locations de vélos enfant."
+    "Refonte de l'application Test Produit \"MVP\" en module CLEAN+MVVM,",
+    "intégration avec une nouvelle API permettant l'internationalisation du service,",
+    "coopération avec l'équipe de l'application de vente omnicanal afin d'y intégrer le parcours,",
+    "extension suivie du service dans plus d'une douzaine de pays,",
+    "réalisation d'une nouvelle expérience Vendeur permettant de proposer et gérer des locations de vélos,",
+    "mise en production de l'expérience Location sur quelques magasins pilotes."
    ],
    "technical_stack": "Kotlin CLEAN+MVVM, RX2, Retrofit, OkHttp, Room, Dagger2, Jetpack, Sonar"
   },
@@ -122,12 +126,14 @@
    "startdate": "de Décembre 2017",
    "enddate": "à Septembre 2019",
    "title": "Développeur Android",
-   "subtitle": "en CDI chez Niji pour Decathlon et Domyos",
-   "intro": "Contributions à l’offre de solutions applicatives disponibles aux vendeurs.",
+   "subtitle": "en CDI chez Niji, pour Decathlon B'Twin et Domyos",
+   "intro": "Contributions à l’offre de solutions applicatives disponibles aux vendeurs (1 dév. Android).",
    "tasks": [
-    "Création de l'application permettant la consultation des caractéristiques techniques, l'aide au choix et la demande d'essai de vélos haut de gamme,",
-    "création d’une application Android permettant aux vendeurs de traiter les demandes d'essais,",
-    "évolution de l’application pour permettre aux vendeurs de configurer leurs propres ensembles d’articles de toute nature de produit, notamment pour une mise en avant de nouveaux produits sur les showrooms Domyos."
+    "Création d'une application permettant la consultation, l'aide au choix et la demande d'essai de vélos haut de gamme sur les bornes-kiosks en rayons,",
+    "création d’une application permettant aux vendeurs de traiter les demandes d'essais,",
+    "évolution de l’application sur les bornes-kiosk afin de permettre une mise en avant de toute nature de produit,",
+    "création de l'application permettant aux vendeurs le choix de l'ensemble d'articles à présenter sur les bornes,",
+    "suivi et maintenance de la production sur quelques pays."
    ],
    "technical_stack": "Kotlin MVVM, RX2, Retrofit, OkHttp, Room, Dagger2, Firebase, Kibana"
   },
@@ -135,11 +141,11 @@
    "startdate": "de Janvier 2017",
    "enddate": "à Oct 2017",
    "title": "Développeur Android",
-   "subtitle": "en CDI chez Niji pour Decathlon",
-   "intro": "Renfort au développement de l’application grand-public.",
+   "subtitle": "en CDI chez Niji, pour Decathlon",
+   "intro": "Renfort à l'équipe de l’application Decathlon grand-public (3 dév. Android).",
    "tasks": [
-    "Développement sur la partie Q&A ainsi que sur de nouvelles fonctionnalités propres à certains pays,",
-    "maintenance applicative (suivi de la production, refactorisations, correctifs)."
+    "Développements sur la partie Q&A ainsi que sur de nouvelles fonctionnalités spécifiques à certains pays,",
+    "maintenance applicative (suivi de la production, traitement de la dette technique, correctifs)."
    ],
    "technical_stack": "Java MVVM, RX2, Retrofit, OkHttp, Realm, Dagger2, Butterknife"
   },
@@ -148,55 +154,58 @@
    "enddate": "à Octobre 2016",
    "title": "Développeur Android",
    "subtitle": "en CDI chez Equisense",
-   "intro": "Travaux autour du capteur inertiel \"Motion\" permettant la capture et le traitement de données locomotrices durant un entrainement équestre.",
+   "intro": "Travaux autour de la centrale inertielle \"Motion\" permettant la capture et le traitement des données locomotrices d'un exercice équestre (1 dév. Android).",
    "tasks": [
-    "Preuve de concept permettant de démontrer le bon fonctionnement et la fiabilité du contrôle et de la captation des données,",
-    "première version de l'API afin d'y traiter les données pour en dériver les indicateurs de santé,",
-    "mise à l'épreuve du capteur et de l'application par des tests en écuries."
+    "Réalisation d'une application éprouvant les capacités du capteur,",
+    "création et administration de l'API Firebase afin d'y transmettre et traiter les données locomotrices,",
+    "test des évolutions du capteur et reporting,",
+    "création d'une application Ionic d'exercices équestres,",
+    "participation aux évènements promotionnels."
    ],
-   "technical_stack": "Java MVP, Bluetooth Gatt, Ionic, Parse / Firebase, Ruby, Calabash"
+   "technical_stack": "Java MVP, BLE, Parse, Firebase CloudFunctions, Calabash, Ionic"
   }
  ],
  "older_experiences": [
   {
    "startdate": "de Octobre 2012",
    "enddate": "à Février 2013",
-   "title": "Développeur PHP / Javascript",
+   "title": "Développeur PHP",
    "subtitle": "en freelance pour AlerteApéro",
-   "intro": "Production d'un livrable permettant le déploiement d'un e-commerce Prestashop personnalisable aux franchisés.",
+   "intro": "Réalisation d'un e-commerce livrable, personnalisable par les franchisés.",
    "tasks": [
-    "Surcharge des contrôleurs de la version Prestashop originale,",
-    "développement d'un back-office sous forme de module Prestashop,",
-    "service d'envoi de SMS afin de notifier les transporteurs des commandes,",
-    "implémentation des paiements chiffrés via le kit CMCIC,",
-    "intégration de composants visuels dynamiques."
+    "Estimation des tâches en binôme avec le designer UX,",
+    "ajustement des logiques de contrôle Prestashop,",
+    "développement d'un back-office permettant la configuration,",
+    "intégration de composants JS aux templates,",
+    "réalisation d'un service SMS afin de notifier les transporteurs,",
+    "implémentation des paiements chiffrés via le kit CMCIC."
    ],
-   "technical_stack": "PHP5 MVC, Prestashop, Javascript, jQuery, SQL, Twillio"
+   "technical_stack": "PHP 5, Prestashop, Javascript, jQuery"
   },
   {
    "startdate": "de Juin 2012",
    "enddate": "à Juillet 2013",
    "title": "Développeur Python",
    "subtitle": "en freelance pour 9h37",
-   "intro": "Développementd logiciels système et web facilitant la télé-consultation médicale :",
+   "intro": "Développements facilitant la télé-consultation médicale :",
    "tasks": [
-    "Développement du service permettant le pont de données entre un périphérique médical USB avec un pratiquant tiers distant par XMPP chiffré,",
-    "création de l'UI cross-platform en permettant le contrôle,",
+    "création d'un service permettant un pont de données entre un port USB avec le poste d'un professionel distant,",
+    "création de l'UI cross-platform pour en permettre le contrôle,",
     "obfuscation et packaging msi/deb/rpm du code source."
    ],
-   "technical_stack": "Python 2.7, C, CPython, pyQt, wxPython, XMPP"
+   "technical_stack": "Python, pyQt, wxPython, XMPP"
   },
   {
    "startdate": "de Juillet 2011",
    "enddate": "à Décembre 2011",
-   "title": "Développeur Python / Javascript",
+   "title": "Développeur logiciel",
    "subtitle": "en stage pour 9h37",
-   "intro": "Développement de briques logicielles facilitant la télé-consultation médicale :",
+   "intro": "Développement de briques logicielles facilitant les télé-consultations médicales :",
    "tasks": [
-    "un daemon python permettant l'utilisation d'une page web comme interface pour l'execution de code arbitraire,",
-    "une bibliothèque javascript permettant l'utilisation des logiciels d'Accès aux Téléservices de l'Assurance Maladie (ATSAM) natifs depuis une page web par le biais du daemon, permettant ainsi des intéractions entre un serveur web et les lecteurs de cartes à puce des praticiens de santé."
+    "un service de fond permettant l'utilisation d'une page web pour l'execution de code local natif,",
+    "une bibliothèque javascript permettant d'exploiter les biblothèques ATSAM natives depuis une page web."
    ],
-   "technical_stack": "Python 2.7, CPython, Javascript"
+   "technical_stack": "C, Python, Django, Javascript"
   }
  ],
  "pin_navigation": "Epingler la navigation",
