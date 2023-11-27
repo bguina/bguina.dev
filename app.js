@@ -30,9 +30,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 i18n.expressBind(app, {
   locales: [
     'fr',
-    //'en'
-    ],
-  defaultLocale: 'fr',
+    'en'
+  ],
+  defaultLocale: 'en',
   directory: __dirname + '/locales',
   extension: '.json', 
   cookieName: 'locale',
