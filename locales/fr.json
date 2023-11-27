@@ -1,4 +1,5 @@
 {
+  "language": "fr",
   "domain": "bguina.dev",
   "subject": "Benoit Guina",
   "title": "Développeur logiciel",
@@ -98,7 +99,7 @@
       "subtitle": "en freelance pour Louis Vuitton",
       "intro": "Renfort à l'équipe LV Connect en vue de la sortie de nouveaux objets connectés (4 dév. Android).",
       "tasks": [
-        "Aide à l'estimation des tâches et à la gestion du backlog,",
+        "Estimation des tâches et à gestion du backlog,",
         "réalisation de nombreuses fonctionnalités et intéractions Bluetooth,",
         "administration des déploiements sur Google Play et Huawei App Gallery,",
         "suivi et maintenance des versions en production,",
@@ -208,9 +209,14 @@
       "technical_stack": "C, Python, Django, Javascript"
     }
   ],
+  "education": [
+    {
+      "title": "Ecole d'Expertise en Technologies de l’Information",
+      "establishment": "à EPITECH",
+      "period": "de 2010 à 2014"
+    }
+  ],
   "pin_navigation": "Epingler la navigation",
   "hide_navigation": "Masquer la navigation",
-  "phone_title": "Téléphone",
-  "more_experiences": "more_experiences",
-  "other": "other"
+  "phone_title": "Téléphone"
 }

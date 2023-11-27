@@ -14,13 +14,15 @@ block content
             a.nav-link(href="#experiences" title=__('experiences_header'))= '🧳 ' + __('experiences_header')
           li.nav-item
             a.nav-link(href="#education" title=__('formations_header'))= '🎓 ' + __('formations_header')
-        //ul.nav.navbar-nav.pull-right
-          li
-            a(href="/cv.pdf" title=__('printable_pdf')) 🖶
-          li.hidden-xs
-            label(for="navbar-checkbox" aria-hidden="true")
-              span.pin(title=__('pin_navigation')) 🏢
-              span.unpin(title=__('hide_navigation')) ⨯
+        ul.nav.navbar-nav.pull-right
+          unless __('language') == 'en'
+            li
+              a(href="/en" title="English version")
+                img(src="img/flag-en.png" height="24")
+          unless __('language') == 'fr'
+            li
+              a(href="/fr" title="Version française")
+                img(src="img/flag-fr.png" height="24")
 
   #navbar-padding.d-print-none
 
@@ -137,12 +139,13 @@ block content
           h3='🎓 ' + __('formations_header')
           .container-fluid.content
             ul.list-unstyled
-              li
-                article.p-2
+              each edu in __('education')
+                li.p-2
                   .d-flex
                     .flex-grow-1
-                      h4 Ecole d'Expertise en Technologies de l’Information
-                      h5 à EPITECH
+                      h4=edu.title
+                      h5=edu.establishment
                     h5.datetime
-                        span de 2010 à 2014
+                        span=edu.period
+
   br
