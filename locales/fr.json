@@ -40,9 +40,9 @@
   "email": "benoit.guina@gmail.com",
   "methodology": [
     "Agile SCRUM et Kanban",
-    "Pratique des principes SOLID",
+    "Principes SOLID",
     "Conception orientée Métier",
-    "Développements menés par tests",
+    "Dév. menés par tests",
     "CI / CD"
   ],
   "languages": [
