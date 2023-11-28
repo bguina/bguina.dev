@@ -9,7 +9,7 @@
   "formations_header": "Formations",
   "methodology_header": "Méthodologie",
   "languages_header": "Langues",
-  "languages_and_tools_header": "Languages et outils",
+  "languages_and_tools_header": "Langages et outils favoris",
   "technical_stack": "Environnement technique : ",
   "links": [
     {
@@ -30,7 +30,7 @@
   ],
   "bio": [
     "Expert Android passionné de développement, je me tiens à jour sur des stacks techniques qui me permettent de m'adapter au besoin par une grande polyvalence.",
-    "Je suis disponible pour une mission me permettant de contribuer à des projets Kotlin Multiplatform, Compose Multiplatform et éventuellement d'éprouver mes compétences en iOS et backend Kotlin."
+    "Je suis disponible pour une mission me permettant de contribuer à des projets Kotlin Multiplatform, Compose Multiplatform et éventuellement de démontrer mon génie en iOS et backend Kotlin."
   ],
   "sites_title": "Sites",
   "period_title": "Disponibilité",
@@ -39,11 +39,11 @@
   "period": "Disponible ASAP",
   "email": "benoit.guina@gmail.com",
   "methodology": [
-    "Agile (SCRUM, Kanban)",
-    "Principes SOLID",
-    "Domain-driven design",
-    "Test-driven development",
-    "CI & CD"
+    "Agile SCRUM et Kanban",
+    "Pratique des principes SOLID",
+    "Conception orientée Métier",
+    "Développements menés par tests",
+    "CI / CD"
   ],
   "languages": [
     "Français natif",
@@ -100,10 +100,10 @@
       "intro": "Renfort à l'équipe LV Connect en vue de la sortie de nouveaux objets connectés (4 dév. Android).",
       "tasks": [
         "Estimation des tâches et à gestion du backlog,",
-        "réalisation de nombreuses fonctionnalités et intéractions Bluetooth,",
+        "réalisation de nombreuses fonctionnalités à interactions Bluetooth,",
         "administration des déploiements sur Google Play et Huawei App Gallery,",
         "suivi et maintenance des versions en production,",
-        "documentation et passation des connaissances."
+        "documentation et transmission des connaissances."
       ],
       "technical_stack": "Kotlin CLEAN+MVVM, RX2, LiveData, Retrofit, OkHttp, Room, Hilt, Jetpack, BLE, GMS / HMS, Bitrise, Sonar"
     },
@@ -112,13 +112,13 @@
       "enddate": "à Juillet 2021",
       "title": "Développeur Android",
       "subtitle": "en freelance pour Decathlon",
-      "intro": "Modernisation du parcours Vendeur Test Produit et création du parcours Location (1 dév. Android).",
+      "intro": "Modernisation du parcours de vente Test Produit et création du parcours Location (seul dév. Android).",
       "tasks": [
-        "Refonte de l'application Test Produit \"MVP\" en module CLEAN+MVVM,",
+        "Refonte de l'application \"MVP\" Test Produit en module CLEAN+MVVM,",
         "intégration avec une nouvelle API permettant l'internationalisation du service,",
         "coopération avec l'équipe de l'application de vente omnicanal afin d'y intégrer le parcours,",
-        "extension suivie du service dans plus d'une douzaine de pays,",
-        "réalisation d'une nouvelle expérience Vendeur permettant de proposer et gérer des locations de vélos,",
+        "extension progressive du service dans plus d'une douzaine de pays,",
+        "réalisation d'une nouvelle expérience permettant aux vendeurs de proposer et de gérer la location de vélos,",
         "mise en production de l'expérience Location sur quelques magasins pilotes."
       ],
       "technical_stack": "Kotlin CLEAN+MVVM, RX2, Retrofit, OkHttp, Room, Dagger2, Jetpack, Sonar"
@@ -128,7 +128,7 @@
       "enddate": "à Septembre 2019",
       "title": "Développeur Android",
       "subtitle": "en CDI chez Niji, pour Decathlon B'Twin et Domyos",
-      "intro": "Contributions à l’offre de solutions applicatives disponibles aux vendeurs (1 dév. Android).",
+      "intro": "Contributions à l’offre de solutions applicatives disponibles aux vendeurs (seul dév. Android).",
       "tasks": [
         "Création d'une application permettant la consultation, l'aide au choix et la demande d'essai de vélos haut de gamme sur les bornes-kiosks en rayons,",
         "création d’une application permettant aux vendeurs de traiter les demandes d'essais,",
@@ -155,7 +155,7 @@
       "enddate": "à Octobre 2016",
       "title": "Développeur Android",
       "subtitle": "en CDI chez Equisense",
-      "intro": "Travaux autour de la centrale inertielle \"Motion\" permettant la capture et le traitement des données locomotrices d'un exercice équestre (1 dév. Android).",
+      "intro": "Travaux autour de la centrale inertielle \"Motion\" permettant la capture et le traitement des données locomotrices d'un exercice équestre (seul dév. Android).",
       "tasks": [
         "Réalisation d'une application éprouvant les capacités du capteur,",
         "création et administration de l'API Firebase afin d'y transmettre et traiter les données locomotrices,",

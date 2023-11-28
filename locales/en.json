@@ -9,7 +9,7 @@
  "formations_header": "Education",
  "methodology_header": "Methodology",
  "languages_header": "Languages",
- "languages_and_tools_header": "Languages and tools",
+ "languages_and_tools_header": "Favourite languages & tools",
  "technical_stack": "Technical environment: ",
  "links": [
   {
@@ -39,11 +39,11 @@
  "period": "Available ASAP",
  "email": "benoit.guina@gmail.com",
  "methodology": [
-  "Agile (SCRUM, Kanban)",
-  "SOLID Principles",
+  "Agile SCRUM and Kanban",
+  "Practice of the SOLID principles",
   "Domain-driven design",
   "Test-driven development",
-  "CI & CD"
+  "CI / CD"
  ],
  "languages": [
   "Native French",
@@ -51,8 +51,8 @@
  ],
  "skills": [
   {
-   "icon": "android_studio.png",
-   "label": "Android Studio"
+    "icon": "android_studio.png",
+    "label": "Android Studio"
   },
   {
    "icon": "kotlin.webp",
@@ -93,26 +93,26 @@
  ],
  "experiences": [
   {
-   "startdate": "August 2021",
-   "enddate": "October 2022",
+   "startdate": "from August 2021",
+   "enddate": "to October 2022",
    "title": "Android Developer",
    "subtitle": "Freelancer for Louis Vuitton",
    "intro": "Reinforcement to the LV Connect team for the release of new connected objects (4 Android devs).",
    "tasks": [
     "Task estimation and backlog management,",
-    "implementation of numerous Bluetooth functionalities and interactions,",
-    "administration of deployments on Google Play and Huawei App Gallery,",
+    "implementation of numerous functionalities with Bluetooth interactions,",
+    "administration on Google Play Store and Huawei App Gallery,",
     "monitoring and maintenance of versions in production,",
     "documentation and knowledge transfer."
    ],
    "technical_stack": "Kotlin CLEAN+MVVM, RX2, LiveData, Retrofit, OkHttp, Room, Hilt, Jetpack, BLE, GMS / HMS, Bitrise, Sonar"
   },
   {
-   "startdate": "October 2019",
-   "enddate": "July 2021",
+   "startdate": "from October 2019",
+   "enddate": "to July 2021",
    "title": "Android Developer",
    "subtitle": "Freelancer for Decathlon",
-   "intro": "Modernization of the Vendeur Test Produit journey and creation of the Location journey (1 Android dev).",
+   "intro": "Modernization of the Test&Buy salesman service and creation of the Rent service (1 Android dev).",
    "tasks": [
     "Redesign of the Test Produit application 'MVP' in CLEAN+MVVM module,",
     "integration with a new API allowing internationalization of the service,",
@@ -124,8 +124,8 @@
    "technical_stack": "Kotlin CLEAN+MVVM, RX2, Retrofit, OkHttp, Room, Dagger2, Jetpack, Sonar"
   },
   {
-   "startdate": "December 2017",
-   "enddate": "September 2019",
+   "startdate": "from December 2017",
+   "enddate": "to September 2019",
    "title": "Android Developer",
    "subtitle": "Full-time at Niji, for Decathlon B'Twin and Domyos",
    "intro": "Contributions to the range of application solutions available to sellers (1 Android dev).",
@@ -139,8 +139,8 @@
    "technical_stack": "Kotlin MVVM, RX2, Retrofit, OkHttp, Room, Dagger2, Firebase, Kibana"
   },
   {
-   "startdate": "January 2017",
-   "enddate": "October 2017",
+   "startdate": "from January 2017",
+   "enddate": "to October 2017",
    "title": "Android Developer",
    "subtitle": "Full-time at Niji, for Decathlon",
    "intro": "Reinforcement to the Decathlon consumer application team (3 Android devs).",
@@ -151,8 +151,8 @@
    "technical_stack": "Java MVVM, RX2, Retrofit, OkHttp, Realm, Dagger2, Butterknife"
   },
   {
-   "startdate": "July 2015",
-   "enddate": "October 2016",
+   "startdate": "from July 2015",
+   "enddate": "to October 2016",
    "title": "Android Developer",
    "subtitle": "Full-time at Equisense",
    "intro": "Work on the 'Motion' inertial sensor for capturing and processing locomotor data during an equestrian exercise (1 Android dev).",
@@ -168,8 +168,8 @@
  ],
  "older_experiences": [
   {
-   "startdate": "October 2012",
-   "enddate": "February 2013",
+   "startdate": "from October 2012",
+   "enddate": "to February 2013",
    "title": "PHP Developer",
    "subtitle": "Freelancer for AlerteApéro",
    "intro": "Development of a deliverable e-commerce platform, customizable by franchisees.",
@@ -184,8 +184,8 @@
    "technical_stack": "PHP 5, Prestashop, Javascript, jQuery"
   },
   {
-   "startdate": "June 2012",
-   "enddate": "July 2013",
+   "startdate": "from June 2012",
+   "enddate": "to July 2013",
    "title": "Python Developer",
    "subtitle": "Freelancer for 9h37",
    "intro": "Developments facilitating remote medical teleconsultation:",
@@ -197,8 +197,8 @@
    "technical_stack": "Python, pyQt, wxPython, XMPP"
   },
   {
-   "startdate": "July 2011",
-   "enddate": "December 2011",
+   "startdate": "from July 2011",
+   "enddate": "to December 2011",
    "title": "Software Developer",
    "subtitle": "Intern at 9h37",
    "intro": "Development of software components facilitating medical teleconsultations:",
@@ -218,6 +218,5 @@
  ],
  "pin_navigation": "Pin Navigation",
  "hide_navigation": "Hide Navigation",
- "phone_title": "Phone",
- "lang": "lang"
+ "phone_title": "Phone"
 }
