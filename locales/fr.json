@@ -36,7 +36,7 @@
   "period_title": "Disponibilité",
   "email_title": "Adresse e-mail",
   "sites": "Lille, Paris + télétravail",
-  "period": "Disponible ASAP",
+  "period": "Indisponible",
   "email": "benoit.guina@gmail.com",
   "methodology": [
     "Agile SCRUM et Kanban",
@@ -99,7 +99,7 @@
       "subtitle": "en freelance pour Louis Vuitton",
       "intro": "Renfort à l'équipe LV Connect en vue de la sortie de nouveaux objets connectés (4 dév. Android).",
       "tasks": [
-        "Estimation des tâches et à gestion du backlog,",
+        "Estimation des tâches et gestion du backlog,",
         "réalisation de nombreuses fonctionnalités à interactions Bluetooth,",
         "administration des déploiements sur Google Play et Huawei App Gallery,",
         "suivi et maintenance des versions en production,",
