@@ -48,7 +48,7 @@ echo \
   echo "$GITHUB_TOKEN" | sudo docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
 
   echo '### Pull image ###'
-  sudo docker pull ghcr.io/bguina/bgcv:main
+  sudo docker pull ghcr.io/bguina/bgcv:master
   sudo docker image prune -f
 
   echo '### Write env file ###'
