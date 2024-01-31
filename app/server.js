@@ -13,6 +13,7 @@ var fs = require('fs');
  */
 var server;
 var protocol;
+console.log("path is "+ __dirname);
 if (fs.existsSync(path.join(__dirname, 'certs', 'privkey.pem'))) {
   protocol = 'https';
   var port = normalizePort(process.env.PORT || '443');
@@ -142,4 +143,4 @@ var baseUrl = protocol + "://localhost:" + app.get('port')
 buildPdf(baseUrl + "/en", "resources/public/pdf/bguina.dev-en.pdf");
 buildPdf(baseUrl + "/fr", "resources/public/pdf/bguina.dev-fr.pdf");
 
-console.log("serving "+baseUrl);
+console.log("serving " + baseUrl);

@@ -58,6 +58,7 @@ echo \
   echo '### Start the container'
   mkdir -p "$DEPLOYED_DIR/resources/public/css"
   mkdir -p "$DEPLOYED_DIR/resources/public/pdf"
+  (cd "$DEPLOYED_DIR/deploy" && sudo docker-compose pull)
   sudo docker compose -f "$DEPLOYED_DIR/deploy/docker-compose.yml" --env-file "$ENV_FILE" up --force-recreate -d
   sudo docker image prune -f
 
