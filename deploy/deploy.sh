@@ -22,7 +22,7 @@ mkdir -p "$(dirname "$LOG_FILE")"
   sudo certbot certonly --standalone --non-interactive --agree-tos -m benoit.guina@gmail.com -d "$(hostname)"
 
   echo '### Copy certs locally'
-  sudo cp -Rf "/etc/letsencrypt/live/$(hostname)" "$DEPLOYED_DIR/certs"
+  sudo cp -Rf --dereference "/etc/letsencrypt/live/$(hostname)" "$DEPLOYED_DIR/certs"
   sudo chown -R debian:debian "$DEPLOYED_DIR/certs"
 
   echo '### Add Docker APT repositories'
