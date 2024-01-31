@@ -18,8 +18,9 @@ jobs:
           base: ${{ github.ref_name }}
           filters: |
             bgcv:
-              - .github/actions/**
-              - .github/workflows/build.yml
+              - '.github/actions/**'
+              - '.github/workflows/build.yml'
+              - 'docker/**'
               - 'app/**'
               - 'package.json'
 
