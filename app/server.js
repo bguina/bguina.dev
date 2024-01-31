@@ -30,9 +30,9 @@ if (fs.existsSync("certs/privkey.pem")) {
   app.set('port', port);
 
   debug('starting without HTTPS');
-	var http = require('http');
-	var server = http.createServer(app);
-	server.listen(port);
+  var http = require('http');
+  var server = http.createServer(app);
+  server.listen(port);
 }
 
 /**
@@ -141,3 +141,4 @@ var baseUrl = protocol + "://localhost:" + app.get('port')
 buildPdf(baseUrl + "/en", "resources/public/pdf/bguina.dev-en.pdf");
 buildPdf(baseUrl + "/fr", "resources/public/pdf/bguina.dev-fr.pdf");
 
+console.log("serving "+baseUrl);

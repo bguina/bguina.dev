@@ -56,6 +56,8 @@ echo \
   echo "$GITHUB_TOKEN" | sudo docker login --password-stdin ghcr.io -u "$GITHUB_ACTOR"
 
   echo '### Start the container'
+  mkdir -p "$DEPLOYED_DIR/resources/public/css"
+  mkdir -p "$DEPLOYED_DIR/resources/public/pdf"
   sudo docker compose -f "$DEPLOYED_DIR/deploy/docker-compose.yml" --env-file "$ENV_FILE" up --force-recreate -d
   sudo docker image prune -f
 
