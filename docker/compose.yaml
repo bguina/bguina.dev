@@ -1,3 +1,4 @@
+version: "3.9"
 services:
   bgcv:
     platform: "linux/x86_64"
@@ -11,4 +12,4 @@ services:
     environment:
       NODE_ENV: production
     ports:
-      - 8080:8080
+      - "8080:8080"

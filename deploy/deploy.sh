@@ -5,25 +5,27 @@
 # Exit on any command error
 set -e
 
+DEPLOYED_DIR="./bguina.dev"
+
 # Log into a new file
-LOG_FILE=./logs/deploy.$(date +%s).log
+LOG_FILE="$DEPLOYED_DIR/deploy.$(date +%s).log"
 mkdir -p "$(dirname "$LOG_FILE")"
 
 {
   sudo unattended-upgrade
 
-  echo '### Install certbot (https://certbot.eff.org/instructions?ws=other&os=ubuntufocal) ###'
+  echo '### Install certbot (https://certbot.eff.org/instructions?ws=other&os=ubuntufocal)'
   sudo apt-get install -y snapd
   sudo apt-get remove -y certbot
   sudo snap install --classic certbot
   sudo ln -fs /snap/bin/certbot /usr/bin/certbot
   sudo certbot certonly --standalone --non-interactive --agree-tos -m benoit.guina@gmail.com -d "$(hostname)"
 
-  echo '### Copy certs locally ###'
-  sudo cp -Rf "/etc/letsencrypt/live/$(hostname)" ./certs
-  sudo chown -R debian:debian ./certs
+  echo '### Copy certs locally'
+  sudo cp -Rf "/etc/letsencrypt/live/$(hostname)" "$DEPLOYED_DIR/certs"
+  sudo chown -R debian:debian "$DEPLOYED_DIR/certs"
 
-  echo '### Add Docker APT repositories ###'
+  echo '### Add Docker APT repositories'
   # as documrented here: https://docs.docker.com/engine/install/debian/#install-using-the-repository
   sudo apt-get update -y
   sudo apt-get install -y ca-certificates curl
@@ -38,23 +40,23 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
   sudo apt-get update -y
 
-  echo '### Install Docker ###'
+  echo '### Install Docker'
   for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove -y $pkg; done
   sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose docker-compose-plugin
 
-  echo '### Write env file ###'
-  ENV_FILE=deploy/env
+  echo '### Write env file'
+  ENV_FILE="$DEPLOYED_DIR/deploy/env"
   {
     echo ''
   } > "$ENV_FILE"
 
-  echo '### Login to Docker ###'
+  echo '### Login to Docker'
   [[ -z "$GITHUB_ACTOR" ]] && echo "ERROR: No GH actor" && exit 1
   [[ -z "$GITHUB_TOKEN" ]] && echo "ERROR: No GH token" && exit 1
   echo "$GITHUB_TOKEN" | sudo docker login --password-stdin ghcr.io -u "$GITHUB_ACTOR"
 
-  echo '### Start the container ###'
-  sudo docker compose -f deploy/docker-compose.yml --env-file "$ENV_FILE" up --force-recreate -d
+  echo '### Start the container'
+  sudo docker compose -f "$DEPLOYED_DIR/deploy/docker-compose.yml" --env-file "$ENV_FILE" up --force-recreate -d
   sudo docker image prune -f
 
 } 2>&1 | tee -a -i "$LOG_FILE"
