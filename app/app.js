@@ -33,7 +33,7 @@ i18n.expressBind(app, {
     'en'
   ],
   defaultLocale: 'en',
-  directory: __dirname + '/resources/locales',
+  directory: path.join(__dirname, 'resources', 'locales'),
   extension: '.json', 
   cookieName: 'locale',
   indent: ' '
@@ -51,8 +51,8 @@ app.use(function(req, res, next) {
 
 var sass_debug = false;
 app.use(sassMiddleware({
-  src: __dirname + '/resources/views/',
-  dest: __dirname + '/resources/public',
+  src: path.join(__dirname, 'resources', 'views'),
+  dest: path.join(__dirname, 'resources', 'public'),
   debug: sass_debug,
   outputStyle: (sass_debug === true) ? 'expanded' : 'compressed',
   error: function(err) {

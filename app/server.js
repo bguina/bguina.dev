@@ -5,6 +5,7 @@
  */
 var app = require('./app');
 var debug = require('debug')('bgcv:server');
+var path = require('path');
 var fs = require('fs');
 
 /**
@@ -12,7 +13,7 @@ var fs = require('fs');
  */
 var server;
 var protocol;
-if (fs.existsSync("certs/privkey.pem")) {
+if (fs.existsSync(path.join(__dirname, 'certs', 'privkey.pem'))) {
   protocol = 'https';
   var port = normalizePort(process.env.PORT || '443');
   app.set('port', port);
@@ -20,8 +21,8 @@ if (fs.existsSync("certs/privkey.pem")) {
   debug('starting with HTTPS');
   var https = require('https');
   var server = https.createServer({
-    key: fs.readFileSync("certs/privkey.pem"),
-    cert: fs.readFileSync("certs/fullchain.pem")
+    key: fs.readFileSync(path.join(__dirname, 'certs', 'privkey.pem')),
+    cert: fs.readFileSync(path.join(__dirname, 'certs', 'fullchain.pem'))
   }, app);
   server.listen(port);
 } else {
