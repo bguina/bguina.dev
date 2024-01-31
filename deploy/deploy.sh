@@ -40,7 +40,7 @@ echo \
 
   echo '### Install Docker ###'
   for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
-  sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose docker-compose-plugin
 
   echo '### Login to Docker ###'
   [[ -z "$GITHUB_ACTOR" ]] && echo "ERROR: No GH actor" && exit 1
