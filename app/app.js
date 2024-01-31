@@ -49,8 +49,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-
-var sass_debug = true;
+var sass_debug = false;
 app.use(sassMiddleware({
   src: __dirname + '/resources/views/',
   dest: __dirname + '/resources/public',

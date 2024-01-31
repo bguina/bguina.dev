@@ -20,14 +20,8 @@ jobs:
             bgcv:
               - .github/actions/**
               - .github/workflows/build.yml
-              - 'bin/**'
-              - 'locales/**'
-              - 'public/**'
-              - 'routes/**'
-              - 'views/**'
-              - '.bowerrc'
-              - 'app.js'
-              - '*.json'
+              - 'app/**'
+              - 'package.json'
 
   build-bgcv:
     needs: changes
