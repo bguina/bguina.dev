@@ -25,8 +25,8 @@ mkdir -p "$(dirname "$LOG_FILE")"
 
   echo '### Add Docker APT repositories ###'
   # as documrented here: https://docs.docker.com/engine/install/debian/#install-using-the-repository
-  sudo apt-get update
-  sudo apt-get install ca-certificates curl
+  sudo apt-get update -y
+  sudo apt-get install -y ca-certificates curl
   sudo install -m 0755 -d /etc/apt/keyrings
   if ! test -f "/etc/apt/keyrings/docker.gpg"; then
   sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
@@ -36,10 +36,10 @@ echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-  sudo apt-get update
+  sudo apt-get update -y
 
   echo '### Install Docker ###'
-  for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
+  for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove -y $pkg; done
   sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose docker-compose-plugin
 
   echo '### Write env file ###'
