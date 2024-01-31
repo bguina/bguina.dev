@@ -47,7 +47,7 @@ echo \
   echo '### Write env file'
   ENV_FILE="$DEPLOYED_DIR/deploy/env"
   {
-    echo ''
+    echo 'PORT=8080'
   } > "$ENV_FILE"
 
   echo '### Login to Docker'
