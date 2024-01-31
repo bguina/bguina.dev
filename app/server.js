@@ -114,6 +114,7 @@ async function buildPdf(url, outputFile) {
   const browser = await Puppeteer.launch({
     headless: "new",
     args: [
+      '--no-sandbox',
       '--disable-audio-output'
     ],
   });
