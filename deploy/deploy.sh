@@ -42,22 +42,19 @@ echo \
   for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
   sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose docker-compose-plugin
 
-  echo '### Login to Docker ###'
-  [[ -z "$GITHUB_ACTOR" ]] && echo "ERROR: No GH actor" && exit 1
-  [[ -z "$GITHUB_TOKEN" ]] && echo "ERROR: No GH token" && exit 1
-  echo "$GITHUB_TOKEN" | sudo docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
-
-  echo '### Pull image ###'
-  sudo docker pull ghcr.io/bguina/bgcv:master
-  sudo docker image prune -f
-
   echo '### Write env file ###'
   ENV_FILE=deploy/env
   {
     echo ''
   } > "$ENV_FILE"
 
+  echo '### Login to Docker ###'
+  [[ -z "$GITHUB_ACTOR" ]] && echo "ERROR: No GH actor" && exit 1
+  [[ -z "$GITHUB_TOKEN" ]] && echo "ERROR: No GH token" && exit 1
+  echo "$GITHUB_TOKEN" | sudo docker login --password-stdin ghcr.io -u "$GITHUB_ACTOR"
+
   echo '### Start the container ###'
   sudo docker compose -f deploy/docker-compose.yml --env-file "$ENV_FILE" up --force-recreate -d
+  sudo docker image prune -f
 
 } 2>&1 | tee -a -i "$LOG_FILE"
