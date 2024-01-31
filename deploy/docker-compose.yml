@@ -5,8 +5,8 @@ services:
     image: ghcr.io/bguina/bgcv:latest
     volumes:
       # Mount volumes of generated files directories.
-      - ../bguina.dev/resources/public/css:/usr/src/bgcv/app/resources/public/css
-      - ../bguina.dev/resources/public/pdf:/usr/src/bgcv/app/resources/public/pdf
+      - ../resources/public/css:/usr/src/bgcv/app/resources/public/css
+      - ../resources/public/pdf:/usr/src/bgcv/app/resources/public/pdf
     environment:
       NODE_ENV: production
     ports:

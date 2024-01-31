@@ -12,19 +12,18 @@ var fs = require('fs');
  */
 var server;
 var protocol;
-if (undefined != process.env.BGUINA_KEY) {
+if (fs.existsSync("certs/privkey.pem")) {
   protocol = 'https';
   var port = normalizePort(process.env.PORT || '443');
   app.set('port', port);
 
   debug('starting with HTTPS');
-	var https = require('https');
-
-	var server = https.createServer({
-    key: fs.readFileSync(process.env.BGUINA_KEY),
-    cert: fs.readFileSync(process.env.BGUINA_CERT)
+  var https = require('https');
+  var server = https.createServer({
+    key: fs.readFileSync("certs/privkey.pem"),
+    cert: fs.readFileSync("certs/fullchain.pem")
   }, app);
-	server.listen(port);
+  server.listen(port);
 } else {
   protocol = 'http';
   var port = normalizePort(process.env.PORT || '8080');
