@@ -2,18 +2,11 @@
 # yarn lockfile v1
 
 
-animate.css@daneden/animate.css#~3.5.2:
-  version "3.5.1"
-  resolved "https://codeload.github.com/daneden/animate.css/tar.gz/dac3dab7b59cb6072b5d0fe23eae3805e370a58c"
+animate.css@daneden/animate.css#~4.0.0:
+  version "4.0.0"
+  resolved "https://codeload.github.com/daneden/animate.css/tar.gz/b29bc450f446f0e9705ce72a932ff01ab274eb4c"
 
-enquire@WickyNilliams/enquire.js#~2.1.2:
-  version "2.1.6"
-  resolved "https://codeload.github.com/WickyNilliams/enquire.js/tar.gz/2f339f1e29b2b6676f541e64b770635075af494d"
-
-jquery-throttle-debounce@cowboy/jquery-throttle-debounce#*:
-  version "0.0.0"
-  resolved "https://codeload.github.com/cowboy/jquery-throttle-debounce/tar.gz/bb5bd71e405cd65ec8b750e17cf99dcdcf5cc5c9"
-
-jquery@jquery/jquery-dist#3.1.1:
-  version "3.1.1"
-  resolved "https://codeload.github.com/jquery/jquery-dist/tar.gz/1b30f3ad466ebf2714d47eda34dbd7fdf6849fe3"
+bootstrap@5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.2.tgz#97226583f27aae93b2b28ab23f4c114757ff16ae"
+  integrity sha512-D32nmNWiQHo94BKHLmOrdjlL05q1c8oxbtBphQFb9Z5to6eGRDCm0QgeaZ4zFBHzfg2++rqa2JkqCcxDy0sH0g==

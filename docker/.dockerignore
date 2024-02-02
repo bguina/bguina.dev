@@ -27,8 +27,7 @@
 **/vendors
 **/npm-debug.log
 **/obj
-**/secrets.dev.yaml
-**/values.dev.yaml
+**/*secrets*
 **/build
 **/dist
 LICENSE

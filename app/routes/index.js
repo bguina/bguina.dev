@@ -1,22 +1,20 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+
+const router = express.Router();
 
 /* GET home page. */
-router.get('/', function (req, res) {
-  res.render('index', {
-    pdf: req.query.pdf,
-  })
+router.get('/', (req, res) => {
+  res.render('index');
 });
 
-router.get('/fr', function (req, res) {
-  res.cookie('locale', 'fr');
-  res.redirect('/')
+router.get('/en', (req, res) => {
+  req.i18n.setLocale('en');
+  res.render('index');
 });
 
-router.get('/en', function (req, res) {
-  res.cookie('locale', 'en');
-  res.redirect('/')
-}); 
-
+router.get('/fr', (req, res) => {
+  req.i18n.setLocale('fr');
+  res.render('index');
+});
 
 module.exports = router;

@@ -51,7 +51,7 @@ block content
                 h5(title=__('email_title'))='📧 '+ __('email')
               li.d-print-none
                 h5(title=__('email_title'))
-                  |📧 
+                  |📧
                   a(href="mailto:"+__('email'))=__('email')
               li
                 each link in __('links')
@@ -108,7 +108,7 @@ block content
                         each task in xp.tasks ? xp.tasks : []
                           li=task
                     if xp.technical_stack
-                      b=__('technical_stack') 
+                      b=__('technical_stack')
                       = xp.technical_stack
             each xp in __('older_experiences')
               article.p-2
@@ -125,7 +125,7 @@ block content
                         each task in xp.tasks ? xp.tasks : []
                           li=task
                     if xp.technical_stack
-                      b=__('technical_stack') 
+                      b=__('technical_stack')
                       = xp.technical_stack
 
         section#education
