@@ -5,7 +5,7 @@
   "scripts": {
     "install-resources": "cd app/resources && yarn install",
     "postinstall": "yarn run install-resources",
-    "start": "yarn run eslint ./app && cd app && node ./server",
+    "start": "yarn run eslint ./app --fix && cd app && node ./server",
     "start-docker": "cd docker && docker-compose up --build"
   },
   "dependencies": {

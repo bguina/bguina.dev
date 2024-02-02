@@ -23,19 +23,14 @@ app.use(cookieParser());
 // And attach helper methods for use in templates
 i18n.expressBind(app, {
   locales: [
-    'fr',
     'en',
+    'fr',
   ],
   defaultLocale: 'en',
   directory: path.join(resourcesDir, 'locales'),
   extension: '.json',
   cookieName: 'locale',
   indent: ' ',
-});
-
-app.use((req, res, next) => {
-  req.i18n.setLocaleFromCookie();
-  next();
 });
 
 app.use(express.static(path.join(resourcesDir, 'public')));
