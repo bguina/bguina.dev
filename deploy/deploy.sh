@@ -59,8 +59,8 @@ echo \
   mkdir -p "$DEPLOYED_DIR/resources/public/css"
   mkdir -p "$DEPLOYED_DIR/resources/public/pdf"
   (cd "$DEPLOYED_DIR/deploy" && sudo docker-compose pull)
-  sudo docker compose up \
-    -f "$DEPLOYED_DIR/deploy/docker-compose.yml" --env-file "$ENV_FILE" --force-recreate -d --remove-orphans
+  sudo docker compose -f "$DEPLOYED_DIR/deploy/docker-compose.yml" --env-file "$ENV_FILE" up -d \
+    --force-recreate --remove-orphans
   sudo docker image prune -f
 
 } 2>&1 | tee -a -i "$LOG_FILE"
