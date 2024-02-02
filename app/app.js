@@ -14,13 +14,10 @@ const app = express();
 const resourcesDir = path.join(__dirname, 'resources');
 
 app.use(favicon(path.join(resourcesDir, 'public', 'img', 'favicon.ico')));
-app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// Attach the i18n property to the express request object
-// And attach helper methods for use in templates
 i18n.expressBind(app, {
   locales: [
     'en',
@@ -32,6 +29,15 @@ i18n.expressBind(app, {
   cookieName: 'locale',
   indent: ' ',
 });
+
+app.use((req, res, next) => {
+  req.i18n.setLocaleFromCookie();
+  next();
+});
+
+if (env.isDevelopment) {
+  app.use(morgan('dev'));
+}
 
 app.use(express.static(path.join(resourcesDir, 'public')));
 app.set('views', path.join(resourcesDir, 'views'));
