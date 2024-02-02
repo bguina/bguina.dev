@@ -9,7 +9,7 @@
   "formations_header": "Formations",
   "methodology_header": "Méthodologie",
   "languages_header": "Langues",
-  "languages_and_tools_header": "Familier avec",
+  "languages_and_tools_header": "Les + demandés",
   "technical_stack": "Environnement technique : ",
   "links": [
     {
@@ -32,11 +32,11 @@
     "Ayant commencé à coder très tôt, j'appréhende de nouveaux langages et outils avec grande aisance. Je suis actuellement freelance afin de trouver les meilleurs compromis à un large panel de problématiques.",
     "Je prends plaisir à chaque nouveau projet en testant, documentant et automatisant au mieux afin d'aisément tirer parti de solutions simples et évolutives."
   ],
-  "sites_title": "Sites",
+  "sites_title": "Lieux",
   "period_title": "Disponibilité",
   "email_title": "Adresse e-mail",
-  "sites": "Lille, Paris + remote",
-  "period": "Disponible à partir de février 2024",
+  "sites": "Lille, Paris (hybride)",
+  "period": "Disponible février 2024",
   "email": "benoit.guina@gmail.com",
   "methodology": [
     "Scrum, Kanban",
@@ -51,40 +51,36 @@
   ],
   "skills": [
     {
-      "icon": "android_studio.png",
-      "label": "Android Studio"
-    },
-    {
-      "icon": "kotlin.webp",
-      "label": "Java, Kotlin"
+      "icon": "git-original.png",
+      "label": "Git, bash"
     },
     {
       "icon": "ccpp.png",
       "label": "C, C++, OpenGL"
     },
     {
-      "icon": "python-original.png",
-      "label": "Python, Django"
+      "icon": "kotlin.webp",
+      "label": "Java, Kotlin"
     },
     {
-      "icon": "javascript-original.png",
-      "label": "JS, Typescript"
+      "icon": "android_studio.png",
+      "label": "Android Studio"
+    },
+    {
+      "icon": "python-original.png",
+      "label": "Python, Django"
     },
     {
       "icon": "nodejs-original.png",
       "label": "Node, Express"
     },
     {
-      "icon": "html5-original.png",
-      "label": "HTML5, CSS3"
+      "icon": "vuejs.png",
+      "label": "VueJS, Typescript"
     },
     {
       "icon": "db.png",
       "label": "SQL, MongoDB"
-    },
-    {
-      "icon": "git-original.png",
-      "label": "Git, bash"
     },
     {
       "icon": "cicd.png",
@@ -94,7 +90,7 @@
   "experiences": [
     {
       "startdate": "Décembre 2023",
-      "enddate": "Janvier 2024",
+      "enddate": "Aujourd'hui",
       "title": "Développeur Back-end",
       "subtitle": "en freelance pour ID4IT",
       "intro": "Développements orientés tests de services permettant l'hypervision bâtimentaire 3D.",

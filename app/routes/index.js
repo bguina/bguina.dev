@@ -1,5 +1,4 @@
 const express = require('express');
-const logger = require('../logger');
 
 const router = express.Router();
 
@@ -13,12 +12,12 @@ router.get('/', (req, res) => {
 
 router.get('/en', (req, res) => {
   res.cookie('locale', 'en');
-  res.render('index');
+  res.redirect('/');
 });
 
 router.get('/fr', (req, res) => {
   res.cookie('locale', 'fr');
-  res.render('index');
+  res.redirect('/');
 });
 
 module.exports = router;

@@ -9,7 +9,7 @@
   "formations_header": "Education",
   "methodology_header": "Methodology",
   "languages_header": "Languages",
-  "languages_and_tools_header": "Familiar with",
+  "languages_and_tools_header": "Most popular",
   "technical_stack": "Technical environment: ",
   "links": [
     {
@@ -35,8 +35,8 @@
   "sites_title": "Sites",
   "period_title": "Availability",
   "email_title": "Email Address",
-  "sites": "Lille, Paris + remote",
-  "period": "Available from February 2024",
+  "sites": "Lille, Paris (hybrid)",
+  "period": "Available in February 2024",
   "email": "benoit.guina@gmail.com",
   "methodology": [
     "Scrum, Kanban",
@@ -51,40 +51,36 @@
   ],
   "skills": [
     {
-      "icon": "android_studio.png",
-      "label": "Android Studio"
-    },
-    {
-      "icon": "kotlin.webp",
-      "label": "Java, Kotlin, KTor"
+      "icon": "git-original.png",
+      "label": "Git, bash"
     },
     {
       "icon": "ccpp.png",
       "label": "C, C++, OpenGL"
     },
     {
-      "icon": "python-original.png",
-      "label": "Python, Django"
+      "icon": "kotlin.webp",
+      "label": "Java, Kotlin"
     },
     {
-      "icon": "javascript-original.png",
-      "label": "JS, Typescript"
+      "icon": "android_studio.png",
+      "label": "Android Studio"
+    },
+    {
+      "icon": "python-original.png",
+      "label": "Python, Django"
     },
     {
       "icon": "nodejs-original.png",
       "label": "Node, Express"
     },
     {
-      "icon": "html5-original.png",
-      "label": "HTML5, CSS3"
+      "icon": "vuejs.png",
+      "label": "VueJS, Typescript"
     },
     {
       "icon": "db.png",
       "label": "SQL, MongoDB"
-    },
-    {
-      "icon": "git-original.png",
-      "label": "Git, bash"
     },
     {
       "icon": "cicd.png",
@@ -94,7 +90,7 @@
   "experiences": [
     {
       "startdate": "December 2023",
-      "enddate": "January 2024",
+      "enddate": "Now",
       "title": "Back-end Developer",
       "subtitle": "Freelancer for ID4IT",
       "intro": "Test-driven development of services enabling 3D building hypervision.",

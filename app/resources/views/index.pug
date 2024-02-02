@@ -1,5 +1,6 @@
 extends layout
 block content
+  #navbar-padding.d-print-none
   nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.d-print-none
     .container-fluid
       a.navbar-brand(href="#")=__('domain')
@@ -24,8 +25,6 @@ block content
               a(href="/fr" title="Français")
                 img(src="img/flag-fr.png" height="20")
 
-  #navbar-padding.d-print-none
-
   .cv.p-3
     #header-container.row
       .col-3.d-none.d-print-none.d-sm-block.align-self-center
@@ -47,20 +46,17 @@ block content
                 h5(title=__('period_title'))='✅ ' + __('period')
               li
                 h5(title=__('sites_title'))='📍 ' + __('sites')
-              li.d-none.d-print-block
-                h5(title=__('email_title'))='📧 '+ __('email')
-              li.d-print-none
-                h5(title=__('email_title'))
-                  |📧
-                  a(href="mailto:"+__('email'))=__('email')
+              li
+                h5(title=__('email_title'))='📧 '
+                  a.text-body.text-decoration-none(href="mailto:"+__('email'))=__('email')
               li
                 each link in __('links')
                   a(href=link.url title=link.title)
                     img.icon(src="/img/" + link.icon)
-              li.d-none
+              li.d-none.d-print-block
                 h5='🌐 https://' + __('domain')
     .row
-      .col-lg-3
+      .col-12.col-print-12.col-lg-3
         section#skills
           h3=__('skills_header')
           .row.content
@@ -89,7 +85,7 @@ block content
                       img.align-self-center.align-self-lg-start.icon(src="/img/" + skill.icon alt=skill.label)
                       span.d-inline-block=skill.label
 
-      .col-12.col-md-12.col-lg-9
+      .col-12.col-print-12.col-lg-9
         section#experiences
           h3=__('experiences_header')
           .container-fluid.content
