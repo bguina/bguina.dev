@@ -1,6 +1,6 @@
-name: "Build BGCV"
+name: "Build bgcv"
 
-description: "Build BGCV"
+description: "Build bgcv-node"
 
 runs:
   using: "composite"
@@ -9,7 +9,7 @@ runs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        images: ghcr.io/bguina/bgcv
+        images: ghcr.io/bguina/bgcv-node
         tags: |
           type=semver,pattern={{version}},value=${{ inputs.version }}
           type=semver,pattern={{major}}.{{minor}},value=${{ inputs.version }}

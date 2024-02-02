@@ -1,5 +1,4 @@
 version: "3.9"
-name: bgcv
 services:
   bgcv-production:
     image: ghcr.io/bguina/bgcv-node:latest
@@ -10,6 +9,7 @@ services:
       # Mount volume of certs.
       - ../certs:/usr/src/bgcv/app/certs
     environment:
+      COMPOSE_PROJECT_NAME: bgcv
       NODE_ENV: production
       PORT: 8080
     ports:
