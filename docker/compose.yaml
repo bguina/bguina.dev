@@ -6,7 +6,7 @@ services:
     build:
       context: ../
       dockerfile: ./docker/Dockerfile
-      args: [ "NODE_ENV=development" ]
+      args: [ "NODE_ENV=production" ]
     volumes:
       # Mount volumes of generated files directories.
       - ../app/resources/public/pdf:/usr/src/bgcv/app/resources/public/pdf
