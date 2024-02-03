@@ -1,5 +1,4 @@
 version: "3.9"
-name: bgcv
 services:
   node-production:
     image: ghcr.io/bguina/bgcv-node:latest
