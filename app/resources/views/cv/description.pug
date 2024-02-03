@@ -8,18 +8,18 @@ section#description.flex-fill.d-print-none
         ul.list-unstyled
           li
             h5(title=__('period_title'))
-              span.material-icons-two-tone event_available
+              span.material-icons-two-tone check
               =' ' + __('period')
           li
             h5(title=__('sites_title'))
-              span.material-icons-two-tone directions_bus
+              span.material-icons-two-tone location_city
               =' ' + __('sites')
           li
             h5(title=__('email_title'))
               span.material-icons-two-tone mail_outline
               a.text-body.text-decoration-none(href="mailto:"+__('email'))=' ' + __('email')
           li
-            ul.list-unstyled.text-center
+            ul.list-unstyled
               each link in __('links')
                 li.d-inline
                   a(href=link.url title=link.title)
