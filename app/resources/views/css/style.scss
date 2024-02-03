@@ -29,7 +29,14 @@
 
 span[class^="material-icons-"] {
   vertical-align: middle;
-  font-size: unset;
+  font-size: 1.2em;
+}
+
+#description {
+  span[class^="material-icons-"] {
+    vertical-align: middle;
+    font-size: 1.5em;
+  }
 }
 
 #photo {
