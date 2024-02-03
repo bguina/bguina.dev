@@ -26,6 +26,7 @@ require(protocol) // eslint-disable-line import/no-dynamic-require
     const baseUrl = `${protocol}://localhost:${port}`;
     logger.info(`Listening on ${baseUrl}`);
 
-    pdf.buildPdf(`${baseUrl}/en`, 'resources/public/pdf/bguina.dev-en.pdf');
-    pdf.buildPdf(`${baseUrl}/fr`, 'resources/public/pdf/bguina.dev-fr.pdf');
+    const pdfDir = path.join(__dirname, 'resources', 'public', 'pdf');
+    pdf.buildPdf(`${baseUrl}/en`, path.join(pdfDir, 'bguina.dev-en.pdf'));
+    pdf.buildPdf(`${baseUrl}/fr`, path.join(pdfDir, 'bguina.dev-fr.pdf'));
   });

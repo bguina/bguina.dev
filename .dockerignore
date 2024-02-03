@@ -23,8 +23,7 @@
 **/docker-compose*
 **/compose*
 **/Dockerfile*
-**/node_modules
-**/vendors
+**/node_modules/**
 **/npm-debug.log
 **/obj
 **/*secrets*
@@ -32,3 +31,6 @@
 **/dist
 LICENSE
 README.md
+
+app/**/vendors
+app/**/*.css*

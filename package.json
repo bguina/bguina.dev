@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "install-resources": "cd app/resources && yarn install",
+    "generate-css": "yarn run sass app/resources/views:app/resources/public",
+    "linter": "[[ \"$NODE_ENV\" == 'production' ]] || yarn run eslint ./app --fix",
     "postinstall": "yarn run install-resources",
-    "start": "yarn run eslint ./app --fix && cd app && node ./server",
-    "start-docker": "cd docker && docker-compose up --build"
+    "start": "yarn run linter && yarn run generate-css && node app/server",
+    "start-docker": "BUILDKIT_PROGRESS=plain docker-compose -f docker/compose.yaml up --build --remove-orphans"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
@@ -15,9 +17,9 @@
     "express-session": "^1.14.1",
     "i18n-2": "^0.6.3",
     "morgan": "^1.10.0",
-    "node-sass-middleware": "^1.1.0",
     "pug": "^3.0.2",
     "puppeteer": "^21.9.0",
+    "sass-embedded": "^1.70.0",
     "serve-favicon": "^2.5.0",
     "winston": "^3.11.0"
   },

@@ -1,16 +1,12 @@
 version: "3.9"
+name: bgcv
 services:
-  bgcv-production:
+  node-production:
     image: ghcr.io/bguina/bgcv-node:latest
     volumes:
-      # Mount volumes of generated files directories.
-      - ../resources/public/css:/usr/src/bgcv/app/resources/public/css
-      - ../resources/public/pdf:/usr/src/bgcv/app/resources/public/pdf
       # Mount volume of certs.
       - ../certs:/usr/src/bgcv/app/certs
     environment:
-      COMPOSE_PROJECT_NAME: bgcv
-      NODE_ENV: production
       PORT: 8080
     ports:
       - "443:8080"

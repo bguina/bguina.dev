@@ -4,9 +4,7 @@ const favicon = require('serve-favicon');
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const sassMiddleware = require('node-sass-middleware');
 const i18n = require('i18n-2');
-const logger = require('./logger');
 const env = require('./env');
 
 const app = express();
@@ -42,25 +40,12 @@ if (env.isDevelopment) {
 app.use(express.static(path.join(resourcesDir, 'public')));
 app.set('views', path.join(resourcesDir, 'views'));
 app.set('view engine', 'pug');
-app.use(sassMiddleware({
-  src: path.join(resourcesDir, 'views'),
-  dest: path.join(resourcesDir, 'public'),
-  debug: env.isDevelopment && false,
-  force: env.isDevelopment,
-  outputStyle: env.isDevelopment ? 'expanded' : 'compressed',
-  error(err) {
-    logger.error(`SASS middleware error: ${err}`);
-  },
-  update(s) {
-    logger.verbose('updated a file', s);
-  },
-}));
 
 app.use('/', require('./routes/index'));
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
-  const err = new Error('Not Found');
+  const err = new Error(`Not Found: ${req.originalUrl}`);
   err.status = 404;
   next(err);
 });
