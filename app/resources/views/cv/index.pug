@@ -1,0 +1,22 @@
+extends ../layout
+block content
+  include navbar.pug
+
+  .cv.p-3
+    #header-container.row
+      .col-3.d-none.d-print-none.d-sm-block.align-self-center
+        img#photo(src="img/profile-bguina.png")
+      #header.col-12.col-sm-6.col-print-12
+        .text-center
+          h1=__('name')
+          h2=__('title')
+
+    include description.pug
+
+    .row
+      .col-12.col-print-12.col-lg-3
+        include skills.pug
+
+      .col-12.col-print-12.col-lg-9
+        include experience.pug
+        include education.pug

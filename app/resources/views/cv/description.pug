@@ -1,0 +1,28 @@
+section#description.flex-fill.d-print-none
+  .content
+    article.container-fluid.d-sm-flex
+      .flex-fill.p-2
+        each paragraph in __('description')
+          p=paragraph
+      .align-self-center.text-nowrap.p-2
+        ul.list-unstyled
+          li
+            h5(title=__('period_title'))
+              span.material-icons-two-tone check
+              =' ' + __('period')
+          li
+            h5(title=__('sites_title'))
+              span.material-icons-two-tone location_city
+              =' ' + __('sites')
+          li
+            h5(title=__('email_title'))
+              span.material-icons-two-tone email
+              a.text-body.text-decoration-none(href="mailto:"+__('email'))=' ' + __('email')
+          li
+            each link in __('links')
+              a(href=link.url title=link.title)
+                img.icon(src="/img/" + link.icon)
+          li.d-none.d-print-block
+            h5
+              span.material-icons-two-tone link
+              =' https://' + __('domain')

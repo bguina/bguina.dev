@@ -1,0 +1,30 @@
+#navbar-padding.d-print-none
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.d-print-none
+  .container-fluid
+    a.navbar-brand(href="#")=__('domain')
+    button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+
+    #navbarCollapse.collapse.navbar-collapse
+      ul#anchors.navbar-nav.me-auto.mb-2.mb-md-0
+        li.nav-item
+          a.nav-link(href="#skills" title=__('skills_header'))
+            span.material-icons-two-tone architecture
+            =' ' + __('skills_header')
+        li.nav-item
+          a.nav-link(href="#experiences" title=__('experiences_header'))
+            span.material-icons-two-tone work_history
+            =' ' + __('experiences_header')
+        li.nav-item
+          a.nav-link(href="#education" title=__('formations_header'))
+            span.material-icons-two-tone child_friendly
+            =' ' + __('formations_header')
+      ul.nav.navbar-nav.pull-right
+        unless __('language') == 'en'
+          li
+            a(href="/en" title="English")
+              img(src="img/flag-en.png" height="20")
+        unless __('language') == 'fr'
+          li
+            a(href="/fr" title="Français")
+              img(src="img/flag-fr.png" height="20")

@@ -1,0 +1,16 @@
+section#education
+  h3
+    span.material-icons-two-tone child_friendly
+    =' ' + __('formations_header')
+  article.container-fluid.content
+    ul.list-unstyled
+      each edu in __('education')
+        li.p-2
+          .d-flex
+            .flex-grow-1
+              h4=edu.title
+              h5=edu.establishment
+            h5.datetime
+              span=edu.period
+          if edu.description
+            p-2=edu.description

@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
   if (!req.cookies.locale) {
     res.cookie('locale', req.acceptsLanguages('fr', 'en') || 'en');
   }
-  res.render('index');
+  res.render('cv/index');
 });
 
 router.get('/en', (req, res) => {

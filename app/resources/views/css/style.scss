@@ -27,6 +27,11 @@
   .col-print-12{width:100%; float:left;}
 }
 
+span[class^="material-icons-"] {
+  vertical-align: middle;
+  font-size: unset;
+}
+
 #photo {
   width: 128px;
   height: 128px;

@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@material-design-icons/font": "^0.14.13",
     "animate.css": "daneden/animate.css#~4.0.0",
-    "bootstrap": "5.3.2"
+    "bootstrap": "5.3.2",
+    "install": "^0.13.0"
   },
   "engines": {
     "yarn": ">= 1.0.0"
