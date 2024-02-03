@@ -27,6 +27,11 @@ require(protocol) // eslint-disable-line import/no-dynamic-require
     logger.info(`Listening on ${baseUrl}`);
 
     const pdfDir = path.join(__dirname, 'resources', 'public', 'pdf');
+
+    if (!fs.existsSync(pdfDir)) {
+      fs.mkdirSync(pdfDir, { recursive: true });
+    }
+
     pdf.buildPdf(`${baseUrl}/en`, path.join(pdfDir, 'bguina.dev-en.pdf'));
     pdf.buildPdf(`${baseUrl}/fr`, path.join(pdfDir, 'bguina.dev-fr.pdf'));
   });
