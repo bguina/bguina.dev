@@ -20,20 +20,3 @@ section#experiences
             if xp.technical_stack
               b=__('technical_stack')
               = xp.technical_stack
-    each xp in __('older_experiences')
-      article.p-2
-        .d-flex
-          .flex-grow-1
-            h4=xp.title
-            h5=xp.subtitle
-          h5.datetime=xp.startdate + ' - ' + xp.enddate
-        .row
-          .container-fluid
-            span=xp.intro
-            if xp.tasks
-              ul
-                each task in xp.tasks ? xp.tasks : []
-                  li=task
-            if xp.technical_stack
-              b=__('technical_stack')
-              = xp.technical_stack

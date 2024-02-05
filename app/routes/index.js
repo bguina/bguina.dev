@@ -1,14 +1,9 @@
 const express = require('express');
+const cv = require('./cv');
 
 const router = express.Router();
 
-/* GET home page. */
-router.get('/', (req, res) => {
-  if (!req.cookies.locale) {
-    res.cookie('locale', req.acceptsLanguages('fr', 'en') || 'en');
-  }
-  res.render('cv/index');
-});
+router.get('/', cv);
 
 router.get('/en', (req, res) => {
   res.cookie('locale', 'en');

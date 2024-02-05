@@ -11,7 +11,7 @@ const app = express();
 
 const resourcesDir = path.join(__dirname, 'resources');
 
-app.use(favicon(path.join(resourcesDir, 'public', 'img', 'favicon.ico')));
+app.use(favicon(path.join(resourcesDir, 'public', 'favicon.ico')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -30,6 +30,9 @@ i18n.expressBind(app, {
 
 app.use((req, res, next) => {
   req.i18n.setLocaleFromCookie();
+  if (!req.cookies.locale) {
+    res.cookie('locale', req.acceptsLanguages('fr', 'en') || 'en');
+  }
   next();
 });
 

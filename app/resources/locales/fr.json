@@ -2,29 +2,26 @@
  "language": "fr",
  "domain": "bguina.dev",
  "name": "Benoit Guina",
- "title": "Développeur logiciel",
+ "title": "Développeur Logiciel",
+ "subtitle": "7 ans de profession, 20 ans de passion",
  "experiences_header": "Expérience professionnelle",
  "skills_header": "Compétences",
  "formations_header": "Formation",
  "methodology_header": "Méthodologie",
- "languages_header": "Langues",
  "languages_and_tools_header": "Les plus fréquents",
  "technical_stack": "Environnement technique : ",
  "links": [
   {
    "icon": "linkedin.png",
    "url": "https://www.linkedin.com/in/bguina",
-   "title": "Profil LinkedIn"
+   "title": "Profil LinkedIn",
+   "label": "/in/bguina"
   },
   {
    "icon": "github.png",
    "url": "http://www.github.com/bguina",
-   "title": "Profil GitHub"
-  },
-  {
-   "icon": "gdev.png",
-   "url": "https://developers.google.com/profile/u/bguina",
-   "title": "Profil Google Developers"
+   "title": "Profil GitHub",
+   "label": "/bguina"
   }
  ],
  "description": [
@@ -34,56 +31,83 @@
  "sites_title": "Lieux",
  "period_title": "Disponibilité",
  "email_title": "Adresse e-mail",
- "sites": "Lille, Paris (hybride)",
+ "sites": "Lille, Paris, remote",
  "period": "Disponible février 2024",
  "email": "benoit.guina@gmail.com",
  "methodology": [
-  "Scrum, Kanban",
+  "Conception Métier",
   "Principes SOLID",
-  "Design orienté Métier",
   "Dév. menés par tests",
-  "CI et CD"
- ],
- "languages": [
-  "Anglais courant",
-  "Français natif"
+  "CI / CD"
  ],
  "skills": [
   {
-   "icon": "git-original.png",
-   "label": "Git, bash"
-  },
-  {
-   "icon": "ccpp.png",
-   "label": "C, C++, OpenGL"
+   "icon": "java.png",
+   "label": "Java"
   },
   {
    "icon": "kotlin.png",
-   "label": "Java, Kotlin"
+   "label": "Kotlin"
+  },
+  {
+   "icon": "ktor.png",
+   "label": "KTor"
   },
   {
    "icon": "android_studio.png",
    "label": "Android Studio"
   },
   {
-   "icon": "python-original.png",
-   "label": "Python, Django"
+   "icon": "nodejs.png",
+   "label": "Node"
   },
   {
-   "icon": "nodejs-original.png",
-   "label": "Node, Express"
+   "icon": "express.webp",
+   "label": "Express"
+  },
+  {
+   "icon": "typescript.png",
+   "label": "Typescript"
+  },
+  {
+   "icon": "python-original.png",
+   "label": "Python"
+  },
+  {
+   "icon": "django.webp",
+   "label": "Django"
   },
   {
    "icon": "vuejs.png",
-   "label": "VueJS, Typescript"
+   "label": "VueJS"
+  },
+  {
+   "icon": "c.png",
+   "label": "C"
+  },
+  {
+   "icon": "cpp.png",
+   "label": "C++"
+  },
+  {
+   "icon": "c-sharp.png",
+   "label": "C#"
+  },
+  {
+   "icon": "opengl.png",
+   "label": "OpenGL"
   },
   {
    "icon": "db.png",
-   "label": "SQL, MongoDB"
+   "label": "SQL"
   },
   {
-   "icon": "cicd.png",
-   "label": "Docker, Bitrise"
+   "icon": "github.png",
+   "label": "GH Actions"
+  },
+  {
+   "icon": "docker.png",
+   "label": "Docker"
   }
  ],
  "experiences": [
@@ -174,9 +198,7 @@
     "création d'une application Ionic d'exercices équestres."
    ],
    "technical_stack": "Java MVP, BLE, Parse, Firebase CloudFunctions, Calabash, Ionic"
-  }
- ],
- "older_experiences": [
+  },
   {
    "startdate": "Octobre 2012",
    "enddate": "Février 2013",
@@ -220,5 +242,7 @@
  "pin_navigation": "Epingler la navigation",
  "hide_navigation": "Masquer la navigation",
  "subject": "subject",
- "bio": "bio"
+ "bio": "bio",
+ "languages_header": "languages_header",
+ "languages": "languages"
 }

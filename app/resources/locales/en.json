@@ -3,28 +3,25 @@
  "domain": "bguina.dev",
  "name": "Benoit Guina",
  "title": "Software Developer",
+ "subtitle": "XP: 8 years pro + 13 years self-taught",
  "experiences_header": "Professional Experience",
  "skills_header": "Skills",
  "formations_header": "Education",
  "methodology_header": "Methodology",
- "languages_header": "Languages",
  "languages_and_tools_header": "Most frequent",
  "technical_stack": "Technical environment: ",
  "links": [
   {
    "icon": "linkedin.png",
    "url": "https://www.linkedin.com/in/bguina",
-   "title": "LinkedIn Profile"
+   "title": "LinkedIn Profile",
+   "label": "/in/bguina"
   },
   {
    "icon": "github.png",
    "url": "http://www.github.com/bguina",
-   "title": "GitHub Profile"
-  },
-  {
-   "icon": "gdev.png",
-   "url": "https://developers.google.com/profile/u/bguina",
-   "title": "Google Developers Profile"
+   "title": "GitHub Profile",
+   "label": "/bguina"
   }
  ],
  "description": [
@@ -34,19 +31,14 @@
  "sites_title": "Sites",
  "period_title": "Availability",
  "email_title": "Email Address",
- "sites": "Lille, Paris (hybrid)",
+ "sites": "Lille, Paris, remote",
  "period": "Available in February 2024",
  "email": "benoit.guina@gmail.com",
  "methodology": [
-  "Scrum, Kanban",
   "SOLID principles",
   "Domain-driven design",
   "TDD",
-  "CI & CD"
- ],
- "languages": [
-  "Fluent English",
-  "Native French"
+  "CI / CD"
  ],
  "skills": [
   {
@@ -70,7 +62,7 @@
    "label": "Python, Django"
   },
   {
-   "icon": "nodejs-original.png",
+   "icon": "nodejs.png",
    "label": "Node, Express"
   },
   {
@@ -174,9 +166,7 @@
     "creation of an Ionic application for equestrian exercises."
    ],
    "technical_stack": "Java MVP, BLE, Parse, Firebase CloudFunctions, Calabash, Ionic"
-  }
- ],
- "older_experiences": [
+  },
   {
    "startdate": "October 2012",
    "enddate": "February 2013",
