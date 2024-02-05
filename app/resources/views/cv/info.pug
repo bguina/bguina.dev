@@ -1,26 +1,25 @@
-ul#info.list-unstyled
-  li
-    h6(title=__('period_title'))
-      span.material-icons-two-tone check
-      =' ' + __('period')
-  li
-    h6(title=__('sites_title'))
-      span.material-icons-two-tone location_city
-      =' ' + __('sites')
-  li
-    h6(title=__('email_title'))
+#info.row
+
+  h6(title=__('period_title')).col-6.col-print-12.col-sm-4.col-md-12
+    span.material-icons-two-tone more_time
+    =' ' + __('period')
+
+  h6(title=__('sites_title')).col-6.col-print-12.col-sm-4.col-md-12
+    span.material-icons-two-tone location_city
+    =' ' + __('sites')
+
+  h6(title=__('email_title')).col-6.col-print-12.col-sm-4.col-md-12
+    a.text-body.text-decoration-none(href="mailto:"+__('email'))
       span.material-icons-two-tone mail_outline
-      a.text-body.text-decoration-none(href="mailto:"+__('email'))=' ' + __('email')
-  li
-    ul.list-unstyled
-      each link in __('links')
-        li
-          h6
-            a.text-body.text-decoration-none(href=link.url title=link.title)
-              img.inline-icon(src="/cv/" + link.icon)
-              =' ' + link.label + ' '
-              span.material-icons-two-tone link
-  li.d-none.d-print-block
-    h6
-      span.material-icons-two-tone link
-      =' https://' + __('domain')
+      =' benoit.guina@gmail.com'
+
+  h6.col-6.col-print-12.col-sm-4.col-md-12.d-none.d-print-block
+    span.material-icons-two-tone language
+    =' https://' + __('domain')
+
+  each link in __('links')
+    h6.col-6.col-print-12.col-sm-4.col-md-12.d-print-none
+      a.text-body.text-decoration-none(href=link.url title=link.title)
+        img.inline-icon(src="/cv/" + link.icon)
+        =' ' + link.label + ' '
+        span.material-icons-two-tone link

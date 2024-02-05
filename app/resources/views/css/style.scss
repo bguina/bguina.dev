@@ -32,11 +32,6 @@ span[class^="material-icons-"] {
   font-size: 1.2em;
 }
 
-#photo {
-  width: 128px;
-  height: 128px;
-}
-
 .datetime {
   margin-top: 4px;
   text-align: end;
@@ -46,9 +41,8 @@ span[class^="material-icons-"] {
 }
 
 .content {
-  padding:0;
-  margin:0;
-  padding: 8px 15px 15px 15px;
+  padding: 0;
+  padding: 8px 15px;
   margin: 0 0 15px 0;
   @media print {
     padding: 0;
@@ -94,6 +88,7 @@ h6 {
   font-family: "Oswald";
   font-size: .96em;
 }
+
 .icon {
   margin: 4px;
   width: 28px;
@@ -104,26 +99,6 @@ h6 {
   margin: 2px;
   width: 1em;
   height: 1em;
-}
-
-#header {
-  display: inline-block;
-  text-align: center;
-  font-family: "Oswald", "Helvetica Neue", Helvetica;
-  color: #444444;
-
-  h1 {
-    margin-bottom: 0;
-    font-weight: bold;
-    text-shadow: 1px 1px #337AB7;
-  }
-
-  #info h2 {
-    font-size: calc(1.325rem + 1.2vw);
-    margin-top: 0;
-    margin-bottom: .2em;
-    font-weight: bold;
-  }
 }
 
 #skills {

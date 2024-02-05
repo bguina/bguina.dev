@@ -1,1 +1,69 @@
 @use '../css/style';
+
+$md-width: 768px;
+$max-width: 992px;
+
+.cv {
+  $width-factor: .9;
+  font-size: calc(6px + max(
+    $width-factor * $md-width / 100,
+    min($width-factor * $max-width / 100, $width-factor * 1vw)
+  ));
+
+  margin: 16px auto 16px;
+  padding: 4rem 2rem 2rem;
+
+  @media screen {
+    max-width: $max-width;
+    background-image: url('/img/bg-paper.jpg');
+
+    @media (max-width: 992px) {
+      margin: auto;
+    }
+  }
+
+  #photo {
+    margin: 1em 0;
+    width: calc(60px + min(9 * $max-width / 100, 9vw));
+  }
+
+  #photo:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  #header {
+    margin: 1em 0;
+    display: inline-block;
+    text-align: center;
+    font-family: "Oswald", "Helvetica Neue", Helvetica;
+    color: #444444;
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0;
+      font-weight: bold;
+      text-shadow: 1px 1px #337AB7;
+    }
+
+    h2 {
+      font-size: 2.36em;
+    }
+
+    h5 {
+      font-size: 1.2em;
+    }
+  }
+
+  #info {
+    margin: 2em 0;
+
+    h6 {
+      font-size: .95em;
+      margin-top: 0;
+      margin-bottom: .3em;
+      font-weight: bold;
+    }
+  }
+}

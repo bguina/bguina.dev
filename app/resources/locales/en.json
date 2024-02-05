@@ -3,12 +3,12 @@
  "domain": "bguina.dev",
  "name": "Benoit Guina",
  "title": "Software Developer",
- "subtitle": "XP: 8 years pro + 13 years self-taught",
+ "subtitle": "8 years of profession, 20 years of passion",
  "experiences_header": "Professional Experience",
  "skills_header": "Skills",
  "formations_header": "Education",
  "methodology_header": "Methodology",
- "languages_and_tools_header": "Most frequent",
+ "languages_and_tools_header": "Languages and tools",
  "technical_stack": "Technical environment: ",
  "links": [
   {
@@ -25,8 +25,6 @@
   }
  ],
  "description": [
-  "Having started coding at a young age, I learn new languages and tools with great ease. I am now a freelancer to find the best solutions for a wide variety of challenges.",
-  "I take pleasure in each new project by testing, documenting, and automating in order to easily leverage simple and scalable solutions."
  ],
  "sites_title": "Sites",
  "period_title": "Availability",
@@ -39,44 +37,6 @@
   "Domain-driven design",
   "TDD",
   "CI / CD"
- ],
- "skills": [
-  {
-   "icon": "git-original.png",
-   "label": "Git, bash"
-  },
-  {
-   "icon": "ccpp.png",
-   "label": "C, C++, OpenGL"
-  },
-  {
-   "icon": "kotlin.png",
-   "label": "Java, Kotlin"
-  },
-  {
-   "icon": "android_studio.png",
-   "label": "Android Studio"
-  },
-  {
-   "icon": "python-original.png",
-   "label": "Python, Django"
-  },
-  {
-   "icon": "nodejs.png",
-   "label": "Node, Express"
-  },
-  {
-   "icon": "vuejs.png",
-   "label": "VueJS, Typescript"
-  },
-  {
-   "icon": "db.png",
-   "label": "SQL, MongoDB"
-  },
-  {
-   "icon": "cicd.png",
-   "label": "Docker, Bitrise"
-  }
  ],
  "experiences": [
   {
@@ -203,7 +163,7 @@
   {
    "title": "School of Expertise in Information Technologies",
    "establishment": "at EPITECH",
-   "period": "2010 to 2014",
+   "period": "2010 - 2014",
    "description": "Including one year at Laurea Leppävaara Campus - Helsinki, Finland."
   }
  ],

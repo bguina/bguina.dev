@@ -1,70 +1,76 @@
- [
-  {
-   "icon": "java.png",
-   "label": "Java"
-  },
-  {
-   "icon": "kotlin.png",
-   "label": "Kotlin"
-  },
-  {
-   "icon": "ktor.png",
-   "label": "KTor"
-  },
-  {
-   "icon": "android_studio.png",
-   "label": "Android Studio"
-  },
-  {
-   "icon": "nodejs.png",
-   "label": "Node"
-  },
-  {
-   "icon": "express.webp",
-   "label": "Express"
-  },
-  {
-   "icon": "typescript.png",
-   "label": "Typescript"
-  },
-  {
-   "icon": "python-original.png",
-   "label": "Python"
-  },
-  {
-   "icon": "django.webp",
-   "label": "Django"
-  },
-  {
-   "icon": "vuejs.png",
-   "label": "VueJS"
-  },
-  {
-   "icon": "c.png",
-   "label": "C"
-  },
-  {
-   "icon": "cpp.png",
-   "label": "C++"
-  },
-  {
-   "icon": "c-sharp.png",
-   "label": "C#"
-  },
-  {
-   "icon": "opengl.png",
-   "label": "OpenGL"
-  },
-  {
-   "icon": "db.png",
-   "label": "SQL"
-  },
-  {
-   "icon": "github.png",
-   "label": "GH Actions"
-  },
-  {
-   "icon": "docker.png",
-   "label": "Docker"
-  }
- ]
+{
+  "skills": [
+    {
+      "icon": "c.png",
+      "label": "C"
+    },
+    {
+      "icon": "cpp.png",
+      "label": "C++"
+    },
+    {
+      "icon": "c-sharp.png",
+      "label": "C#"
+    },
+    {
+      "icon": "opengl.png",
+      "label": "OpenGL"
+    },
+    {
+      "icon": "java.png",
+      "label": "Java"
+    },
+    {
+      "icon": "kotlin.png",
+      "label": "Kotlin"
+    },
+    {
+      "icon": "ktor.png",
+      "label": "KTor"
+    },
+    {
+      "icon": "javafx.webp",
+      "label": "JavaFX"
+    },
+    {
+      "icon": "android_studio.png",
+      "label": "Android"
+    },
+    {
+      "icon": "nodejs.png",
+      "label": "Node"
+    },
+    {
+      "icon": "express.webp",
+      "label": "Express"
+    },
+    {
+      "icon": "typescript.png",
+      "label": "Typescript"
+    },
+    {
+      "icon": "vuejs.png",
+      "label": "VueJS"
+    },
+    {
+      "icon": "python-original.png",
+      "label": "Python"
+    },
+    {
+      "icon": "django.webp",
+      "label": "Django"
+    },
+    {
+      "icon": "db.png",
+      "label": "SQL"
+    },
+    {
+      "icon": "github.png",
+      "label": "GH Actions"
+    },
+    {
+      "icon": "docker.png",
+      "label": "Docker"
+    }
+  ]
+}

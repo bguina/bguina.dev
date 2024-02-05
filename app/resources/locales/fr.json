@@ -3,12 +3,12 @@
  "domain": "bguina.dev",
  "name": "Benoit Guina",
  "title": "Développeur Logiciel",
- "subtitle": "7 ans de profession, 20 ans de passion",
+ "subtitle": "8 ans de profession, 20 ans de passion",
  "experiences_header": "Expérience professionnelle",
  "skills_header": "Compétences",
  "formations_header": "Formation",
  "methodology_header": "Méthodologie",
- "languages_and_tools_header": "Les plus fréquents",
+ "languages_and_tools_header": "Langages et outils",
  "technical_stack": "Environnement technique : ",
  "links": [
   {
@@ -25,14 +25,12 @@
   }
  ],
  "description": [
-  "Ayant commencé à coder très tôt, j'appréhende de nouveaux langages et outils avec grande aisance. Je suis actuellement freelance afin de trouver les meilleurs compromis à un large panel de problématiques.",
-  "Je prends plaisir à chaque nouveau projet en testant, documentant et automatisant au mieux afin d'aisément tirer parti de solutions simples et évolutives."
  ],
  "sites_title": "Lieux",
  "period_title": "Disponibilité",
  "email_title": "Adresse e-mail",
  "sites": "Lille, Paris, remote",
- "period": "Disponible février 2024",
+ "period": "Février 2024",
  "email": "benoit.guina@gmail.com",
  "methodology": [
   "Conception Métier",
@@ -235,7 +233,7 @@
   {
    "title": "Ecole d'Expertise en Technologies de l’Information",
    "establishment": "EPITECH",
-   "period": "2010 à 2014",
+   "period": "2010 - 2014",
    "description": "Dont une année à Laurea Leppävaara Campus - Helsinki, Finlande."
   }
  ],

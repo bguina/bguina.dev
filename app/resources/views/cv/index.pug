@@ -1,32 +1,29 @@
 extends ../layout
 
 block head
-  link(rel='stylesheet' href='/cv/cv.css' media="screen")
+  link(rel='stylesheet' href='/cv/cv.css')
 
 block content
   include navbar.pug
 
-  .cv.p-3
+  .cv
     .row
-      .col-3.d-sm-block.text-center
+      .col-3.text-end
         img#photo.d-none.d-print-none.d-sm-inline.align-self-center(src="cv/profile-bguina.png")
-      #header.col-12.col-sm-6.col-print-12
-        .text-center
-          h1=__('name')
-          h2=__('title')
-          h5=__('subtitle')
-      .col-12.col-md-3
+
+      #header.col-12.col-print-6.col-sm-6
+        h1=__('name')
+        h2=__('title')
+        h5=__('subtitle')
+
+      .col-12.col-print-3.col-md-3.align-middle
         include info.pug
 
-      section#description.flex-fill.d-print-none
-        .content
-          article.container-fluid.d-sm-flex
-            .flex-fill.p-2
-              each paragraph in __('description')
-                p=paragraph
-            .align-self-center.text-nowrap.p-2
-              include info.pug
-
+    if __('description')[0]
+      section#description.row.d-print-none
+        .content.p-2
+            each paragraph in __('description')
+              p=paragraph
 
     .row
       .col-12.col-print-12.col-lg-3
