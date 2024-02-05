@@ -23,6 +23,39 @@ jobs:
               - 'docker/**'
               - 'app/**'
               - 'package.json'
+            nginx:
+              - .github/actions/**
+              - .github/workflows/build.yml
+              - 'docker/nginx/**'
+
+  build-nginx:
+    needs: changes
+    if: ${{ needs.changes.outputs.nginx == 'true' || github.event_name == 'workflow_dispatch' }}
+    name: Build & Push Nginx image
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to Github Docker Registry
+        uses: docker/login-action@v3.0.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3.0.0
+
+      - name: Build Docker Image & Push to registry
+        uses: docker/build-push-action@v5.0.0
+        with:
+          file: ./docker/nginx/Dockerfile
+          context: ./docker/nginx
+          push: true
+          tags: ghcr.io/bguina/bgcv-nginx
 
   build-bgcv:
     needs: changes

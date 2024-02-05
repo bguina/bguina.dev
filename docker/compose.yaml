@@ -1,6 +1,17 @@
 version: "3.9"
 name: bgcv
 services:
+  nginx:
+    container_name: bgcv_nginx
+    image: nginx:latest
+    volumes:
+      - ./nginx.local.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
+      - "443:443"
+    extra_hosts:
+      - "bgcv-node:host-gateway"
+
   node:
     platform: "linux/x86_64"
     build:
@@ -15,3 +26,5 @@ services:
       - PORT=8080
     ports:
       - "8080:8080"
+    links:
+      - nginx
