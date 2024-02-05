@@ -1,6 +1,19 @@
 version: "3.9"
 services:
+  nginx:
+    container_name: bgcv-nginx
+    image: ghcr.io/bguina/bgcv-nginx:latest
+    volumes:
+      - ../certs:/root/ssl
+      - ../resources/public:/usr/share/nginx/dist
+    ports:
+      - "80:80"
+      - "5432:443"
+    links:
+      - node-production
+
   node-production:
+    container_name: bgcv-node
     image: ghcr.io/bguina/bgcv-node:latest
     volumes:
       # Mount volume of certs.

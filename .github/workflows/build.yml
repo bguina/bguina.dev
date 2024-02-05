@@ -8,6 +8,7 @@ jobs:
       contents: read
       pull-requests: read
     outputs:
+      nginx: ${{ steps.filter.outputs.nginx }}
       bgcv: ${{ steps.filter.outputs.bgcv }}
     steps:
       - uses: actions/checkout@v4
@@ -17,16 +18,16 @@ jobs:
         with:
           base: ${{ github.ref_name }}
           filters: |
+            nginx:
+              - .github/actions/**
+              - .github/workflows/build.yml
+              - 'docker/**'
             bgcv:
               - '.github/actions/**'
               - '.github/workflows/build.yml'
               - 'docker/**'
               - 'app/**'
               - 'package.json'
-            nginx:
-              - .github/actions/**
-              - .github/workflows/build.yml
-              - 'docker/nginx/**'
 
   build-nginx:
     needs: changes
@@ -60,7 +61,7 @@ jobs:
   build-bgcv:
     needs: changes
     if: ${{ needs.changes.outputs.bgcv == 'true' || github.event_name == 'workflow_dispatch' }}
-    name: Build & Push Image
+    name: Build & Push Node Image
     runs-on: ubuntu-latest
     permissions:
       contents: read
