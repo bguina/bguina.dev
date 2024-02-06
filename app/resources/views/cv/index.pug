@@ -15,6 +15,9 @@ block content
         h1=__('name')
         h2=__('title')
         h5=__('subtitle')
+        if __('availability') === ""
+          h4.p-2.text-warning.bg-dark
+            =__('unavailable')
 
       .col-12.col-print-3.col-md-3.align-middle
         include info.pug

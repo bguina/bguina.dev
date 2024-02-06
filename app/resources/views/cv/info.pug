@@ -1,8 +1,9 @@
 #info.row
 
-  h6(title=__('period_title')).col-6.col-print-12.col-sm-4.col-md-12
-    span.material-icons-two-tone more_time
-    =' ' + __('period')
+  h6(title=__('availability_title')).col-6.col-print-12.col-sm-4.col-md-12
+    if __('availability') !== ""
+      span.material-icons-two-tone more_time
+      =' ' + __('availability')
 
   h6(title=__('sites_title')).col-6.col-print-12.col-sm-4.col-md-12
     span.material-icons-two-tone location_city

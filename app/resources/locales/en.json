@@ -24,13 +24,13 @@
    "label": "/bguina"
   }
  ],
- "description": [
- ],
+ "description": [],
  "sites_title": "Sites",
- "period_title": "Availability",
  "email_title": "Email Address",
  "sites": "Lille, Paris, remote",
- "period": "Available in February 2024",
+ "availability_title": "Availability",
+ "availability": "",
+ "unavailable": "Unavailable",
  "email": "benoit.guina@gmail.com",
  "methodology": [
   "SOLID principles",

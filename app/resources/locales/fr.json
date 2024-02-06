@@ -24,13 +24,13 @@
    "label": "/bguina"
   }
  ],
- "description": [
- ],
+ "description": [],
  "sites_title": "Lieux",
- "period_title": "Disponibilité",
  "email_title": "Adresse e-mail",
  "sites": "Lille, Paris, remote",
- "period": "Février 2024",
+ "availability_title": "Disponibilité",
+ "availability": "",
+ "unavailable": "Indisponible",
  "email": "benoit.guina@gmail.com",
  "methodology": [
   "Conception Métier",
@@ -242,5 +242,6 @@
  "subject": "subject",
  "bio": "bio",
  "languages_header": "languages_header",
- "languages": "languages"
+ "languages": "languages",
+ "period": "period"
 }
