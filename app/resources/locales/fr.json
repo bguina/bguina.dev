@@ -120,7 +120,7 @@
     "orchestration de plages de programmations avec Quartz,",
     "authentification OIDC par organisation, sécurité PKCE, accès par rôles,",
     "observation et notification temps réel de seuils de valeurs franchies,",
-    "fonctionnalités et aggrégats de données spécifiques front-end,",
+    "compositions de données et fonctionnalités spécifiques front-end,",
     "documentation du vocable et des besoins métiers ainsi que des solutions techniques apportées."
    ],
    "technical_stack": "Kotlin, KTor, MQTT, Postgresql, Keycloak, Nginx, Docker"
@@ -222,7 +222,7 @@
    "tasks": [
     "un service de fond permettant l'utilisation d'une page web pour l'execution de code local natif,",
     "une bibliothèque javascript permettant d'exploiter les biblothèques ATSAM natives depuis une page web,",
-    "création d'un service permettant un pont de données entre un port USB avec le poste d'un professionel distant,",
+    "création d'un service permettant un pont de données entre un port USB avec le poste d'un professionnel distant,",
     "création de l'UI cross-platform pour en permettre le contrôle,",
     "obfuscation et packaging msi / deb / rpm du code source."
    ],
