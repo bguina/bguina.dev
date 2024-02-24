@@ -9,6 +9,7 @@ DEPLOYED_DIR="./bguina.dev"
 
 # Log into a new file
 LOG_FILE="$DEPLOYED_DIR/deploy.$(date +%s).log"
+LETSENCRYPT_CONF_FILE="/etc/letsencrypt/renewal/$(hostname).conf"
 mkdir -p "$(dirname "$LOG_FILE")"
 
 {
@@ -19,11 +20,6 @@ mkdir -p "$(dirname "$LOG_FILE")"
   sudo apt-get remove -y certbot
   sudo snap install --classic certbot
   sudo ln -fs /snap/bin/certbot /usr/bin/certbot
-  sudo certbot certonly --standalone --non-interactive --agree-tos -m benoit.guina@gmail.com -d "$(hostname)"
-
-  echo '### Copy certs locally'
-  sudo cp -Rf --dereference "/etc/letsencrypt/live/$(hostname)" "$DEPLOYED_DIR/certs"
-  sudo chown -R debian:debian "$DEPLOYED_DIR/certs"
 
   echo '### Add Docker APT repositories'
   # as documrented here: https://docs.docker.com/engine/install/debian/#install-using-the-repository
@@ -31,13 +27,14 @@ mkdir -p "$(dirname "$LOG_FILE")"
   sudo apt-get install -y ca-certificates curl
   sudo install -m 0755 -d /etc/apt/keyrings
   if ! test -f "/etc/apt/keyrings/docker.gpg"; then
-  sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
-  sudo chmod a+r /etc/apt/keyrings/docker.asc
+    sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
+    sudo chmod a+r /etc/apt/keyrings/docker.asc
   fi
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
-  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+  echo \
+    "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
+    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+    sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
   sudo apt-get update -y
 
   echo '### Install Docker'
@@ -49,6 +46,18 @@ echo \
   {
     echo 'PORT=8080'
   } > "$ENV_FILE"
+
+  if ! [ -f "$LETSENCRYPT_CONF_FILE" ]; then
+    echo '### Request certs'
+    sudo certbot certonly --standalone --non-interactive --staple-ocsp -m benoit.guina@gmail.com --agree-tos \
+      -d "$(hostname)" -d "www.$(hostname)"
+  fi
+
+  echo '### Setup certs renewal'
+  grep -q 'renew_hook =' "$LETSENCRYPT_CONF_FILE" || \
+    echo "renew_hook = $(realpath $DEPLOYED_DIR)/deploy/renew_hook.sh" | sudo tee -a "$LETSENCRYPT_CONF_FILE"
+  sudo certbot certonly --standalone --non-interactive --agree-tos -m benoit.guina@gmail.com \
+    -d "$(hostname)" -d "www.$(hostname)"
 
   echo '### Login to Docker'
   [[ -z "$GITHUB_ACTOR" ]] && echo "ERROR: No GH actor" && exit 1

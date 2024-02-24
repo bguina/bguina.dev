@@ -41,8 +41,6 @@ USER node
 
 COPY --chown=node:node app/ app/
 
-ENV PORT="8080"
-ENV NODE_ENV=${NODE_ENV}
+ENV NODE_ENV ${NODE_ENV}
 
-EXPOSE ${PORT}
 CMD yarn start

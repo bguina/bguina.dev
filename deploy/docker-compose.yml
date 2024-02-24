@@ -4,22 +4,16 @@ services:
     container_name: bgcv-nginx
     image: ghcr.io/bguina/bgcv-nginx:latest
     volumes:
-      - ../certs:/root/ssl
-      - ../resources/public:/usr/share/nginx/dist
+      - /home/debian/certs/bguina.dev:/root/ssl
     ports:
       - "80:80"
-      - "5432:443"
+      - "443:443"
     links:
       - node-production
 
   node-production:
     container_name: bgcv-node
     image: ghcr.io/bguina/bgcv-node:latest
-    volumes:
-      # Mount volume of certs.
-      - ../certs:/usr/src/bgcv/app/certs
     environment:
       NODE_ENV: "production"
       PORT: 8080
-    ports:
-      - "443:8080"
