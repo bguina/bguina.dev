@@ -29,7 +29,10 @@
 
 span[class^="material-icons-"] {
   vertical-align: middle;
-  font-size: 1.2em;
+}
+
+.pull-right .nav-link span[class^="material-icons-"] {
+  font-size: 1.6em;
 }
 
 .datetime {
@@ -55,20 +58,6 @@ span[class^="material-icons-"] {
   }
 }
 
-.headline {
-  padding: .2em 0 .2em 0;
-  & > * {
-    display: inline-block;
-  }
-  & > a {
-    font-size: 1.85em;
-    line-height: .85em;
-    margin: 0;
-    margin-top: -.2em;
-    padding: .22em;
-    color: #337AB7;
-  }
-}
 h3 {
   margin-left: .4em;
   font-family: "Oswald";
@@ -88,44 +77,6 @@ h6 {
   font-size: .96em;
 }
 
-.icon {
-  margin: 4px;
-  width: 28px;
-  height: 28px;
-}
-
-.inline-icon {
-  margin: 2px;
-  width: 1em;
-  height: 1em;
-}
-
-#skills {
-  ul h5 {
-    display: inline-block;
-    margin-left: 10px;
-  }
-}
-
 article {
   page-break-inside: avoid;
-}
-
-#education {
-  page-break-inside: avoid;
-}
-
-footer {
-  @media (max-width: 767px) {
-    margin: 0;
-  }
-  .row {
-    margin-left: 0px;
-  }
-  height: 5em;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  max-width: inherit;
 }

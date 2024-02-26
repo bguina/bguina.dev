@@ -63,5 +63,32 @@ $max-width: 992px;
       margin-bottom: .3em;
       font-weight: bold;
     }
+
+    span[class^="material-icons-"] {
+      font-size: 1.4em;
+    }
+
+    .icon {
+      margin: 2px;
+      width: 1.2em;
+      height: 1.2em;
+    }
+  }
+
+  #skills {
+    ul h5 {
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .icon {
+      margin: 4px;
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  #education {
+    page-break-inside: avoid;
   }
 }

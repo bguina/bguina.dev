@@ -9,22 +9,25 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.d-print-none
       ul#anchors.navbar-nav.me-auto.mb-2.mb-md-0
         li.nav-item
           a.nav-link(href="#skills" title=__('skills_header'))
-            span.material-icons-two-tone biotech
+            span.material-icons-sharp architecture
             =__('skills_header')
         li.nav-item
           a.nav-link(href="#experiences" title=__('experiences_header'))
-            span.material-icons-two-tone work_history
+            span.material-icons-sharp work_history
             =' ' + __('experiences_header')
         li.nav-item
           a.nav-link(href="#education" title=__('formations_header'))
-            span.material-icons-two-tone child_friendly
+            span.material-icons-sharp child_friendly
             =' ' + __('formations_header')
       ul.nav.navbar-nav.pull-right
+        li.nav-link
+          a(href="/pdf/bguina.dev-" + __('language') + ".pdf" title="PDF")
+            span.material-icons-sharp get_app
         unless __('language') == 'en'
-          li
+          li.nav-link
             a(href="/en" title="English")
               img(src="img/flags/en.png" height="20")
         unless __('language') == 'fr'
-          li
+          li.nav-link
             a(href="/fr" title="Français")
               img(src="img/flags/fr.png" height="20")
