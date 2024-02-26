@@ -1,6 +1,7 @@
 {
  "language": "en",
  "domain": "bguina.dev",
+ "description": "",
  "name": "Benoit Guina",
  "title": "Software Developer",
  "subtitle": "8 years of profession, 20 years of passion",
@@ -24,7 +25,7 @@
    "label": "/bguina"
   }
  ],
- "description": [],
+ "intro": [],
  "sites_title": "Sites",
  "email_title": "Email Address",
  "sites": "Lille, Paris, remote",

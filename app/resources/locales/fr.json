@@ -1,6 +1,7 @@
 {
  "language": "fr",
  "domain": "bguina.dev",
+ "description": "",
  "name": "Benoit Guina",
  "title": "Développeur Logiciel",
  "subtitle": "8 ans de profession, 20 ans de passion",
@@ -24,7 +25,7 @@
    "label": "/bguina"
   }
  ],
- "description": [],
+ "intro": [],
  "sites_title": "Lieux",
  "email_title": "Adresse e-mail",
  "sites": "Lille, Paris, remote",
@@ -37,76 +38,6 @@
   "Principes SOLID",
   "Dév. menés par tests",
   "CI / CD"
- ],
- "skills": [
-  {
-   "icon": "java.png",
-   "label": "Java"
-  },
-  {
-   "icon": "kotlin.png",
-   "label": "Kotlin"
-  },
-  {
-   "icon": "ktor.png",
-   "label": "KTor"
-  },
-  {
-   "icon": "android_studio.png",
-   "label": "Android Studio"
-  },
-  {
-   "icon": "nodejs.png",
-   "label": "Node"
-  },
-  {
-   "icon": "express.webp",
-   "label": "Express"
-  },
-  {
-   "icon": "typescript.png",
-   "label": "Typescript"
-  },
-  {
-   "icon": "python-original.png",
-   "label": "Python"
-  },
-  {
-   "icon": "django.webp",
-   "label": "Django"
-  },
-  {
-   "icon": "vuejs.png",
-   "label": "VueJS"
-  },
-  {
-   "icon": "c.png",
-   "label": "C"
-  },
-  {
-   "icon": "cpp.png",
-   "label": "C++"
-  },
-  {
-   "icon": "c-sharp.png",
-   "label": "C#"
-  },
-  {
-   "icon": "opengl.png",
-   "label": "OpenGL"
-  },
-  {
-   "icon": "db.png",
-   "label": "SQL"
-  },
-  {
-   "icon": "github.png",
-   "label": "GH Actions"
-  },
-  {
-   "icon": "docker.png",
-   "label": "Docker"
-  }
  ],
  "experiences": [
   {

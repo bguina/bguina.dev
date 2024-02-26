@@ -2,6 +2,8 @@ extends ../layout
 
 block head
   link(rel='stylesheet' href='/cv/cv.css')
+  if __('description')
+    meta(name='description' content=__('description'))
 
 block content
   include navbar.pug
@@ -19,10 +21,10 @@ block content
       .col-12.col-print-3.col-md-3.align-middle
         include info.pug
 
-    if __('description')[0]
+    if __('intro')[0]
       section#description.row.d-print-none
         .content.p-2
-            each paragraph in __('description')
+            each paragraph in __('intro')
               p=paragraph
 
     .row

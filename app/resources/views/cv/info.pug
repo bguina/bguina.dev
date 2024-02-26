@@ -1,7 +1,7 @@
 #info.row
 
   if __('availability') !== ""
-    h6(title=__('availability_title')).col-6.col-print-12.col-sm-4.col-md-12
+    h6(title=__('availability_title') data-nosnippet).col-6.col-print-12.col-sm-4.col-md-12
       span.material-icons-two-tone more_time
       =' ' + __('availability')
 
@@ -14,7 +14,7 @@
       span.material-icons-two-tone mail_outline
       =' benoit.guina@gmail.com'
 
-  h6.col-6.col-print-12.col-sm-4.col-md-12.d-none.d-print-block
+  h6(data-nosnippet).col-6.col-print-12.col-sm-4.col-md-12.d-none.d-print-block
     span.material-icons-two-tone language
     =' https://' + __('domain')
 
