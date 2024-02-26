@@ -1,22 +1,6 @@
 {
   "skills": [
     {
-      "icon": "c.png",
-      "label": "C"
-    },
-    {
-      "icon": "cpp.png",
-      "label": "C++"
-    },
-    {
-      "icon": "c-sharp.png",
-      "label": "C#"
-    },
-    {
-      "icon": "opengl.png",
-      "label": "OpenGL"
-    },
-    {
       "icon": "java.png",
       "label": "Java"
     },
@@ -29,12 +13,12 @@
       "label": "KTor"
     },
     {
-      "icon": "javafx.webp",
-      "label": "JavaFX"
-    },
-    {
       "icon": "android_studio.png",
       "label": "Android"
+    },
+    {
+      "icon": "javafx.webp",
+      "label": "JavaFX"
     },
     {
       "icon": "nodejs.png",
@@ -45,7 +29,7 @@
       "label": "Express"
     },
     {
-      "icon": "typescript.png",
+      "icon": "typescript.webp",
       "label": "Typescript"
     },
     {
@@ -59,6 +43,26 @@
     {
       "icon": "django.webp",
       "label": "Django"
+    },
+    {
+      "icon": "c.png",
+      "label": "C"
+    },
+    {
+      "icon": "cpp.webp",
+      "label": "C++"
+    },
+    {
+      "icon": "c-sharp.png",
+      "label": "C#"
+    },
+    {
+      "icon": "qt.webp",
+      "label": "Qt"
+    },
+    {
+      "icon": "opengl.webp",
+      "label": "OpenGL"
     },
     {
       "icon": "db.png",

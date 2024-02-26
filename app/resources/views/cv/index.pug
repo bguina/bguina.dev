@@ -21,10 +21,10 @@ block content
       .col-12.col-print-3.col-md-3.align-middle
         include info.pug
 
-    if __('intro')[0]
-      section#description.row.d-print-none
+    if __('profile')[0]
+      section#profile.row.d-print-none
         .content.p-2
-            each paragraph in __('intro')
+            each paragraph in __('profile')
               p=paragraph
 
     .row
