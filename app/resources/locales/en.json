@@ -78,12 +78,12 @@
    "subtitle": "Freelancer for Decathlon",
    "intro": "Modernization of the Test&Buy salesman service and creation of the Rent service (1 Android dev).",
    "tasks": [
-    "Redesign of the Test Produit application 'MVP' in CLEAN+MVVM module,",
+    "Redesign of the Test&Buy \"MVP\" application as CLEAN+MVVM module,",
     "integration with a new API allowing internationalization of the service,",
-    "collaboration with the omnichannel sales application team to integrate the journey,",
+    "collaboration with the omnichannel sales application team to integrate the service,",
     "service extension to more than a dozen countries,",
-    "development of a new Vendeur experience for offering and managing bike rentals,",
-    "production deployment of the Location experience in a few pilot stores."
+    "development of a new sales experience for offering and managing bike rentals,",
+    "production deployment of the rental experience in a few pilot stores."
    ],
    "technical_stack": "Kotlin CLEAN+MVVM, RX2, Room, Dagger2, Jetpack, Sonar"
   },

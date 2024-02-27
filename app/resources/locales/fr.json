@@ -78,9 +78,9 @@
    "subtitle": "en freelance pour Decathlon",
    "intro": "Modernisation du parcours de vente Test Produit et création du parcours Location (seul dév. Android).",
    "tasks": [
-    "Refonte de l'application \"MVP\" Test Produit en module CLEAN+MVVM,",
-    "intégration avec une nouvelle API permettant l'internationalisation du service,",
+    "Modernisation de l'application \"MVP\" Test Produit en module CLEAN+MVVM,",
     "coopération avec l'équipe de l'application de vente omnicanal afin d'y intégrer le parcours,",
+    "intégration avec une nouvelle API permettant l'internationalisation du service,",
     "extension progressive du service dans plus d'une douzaine de pays,",
     "réalisation d'une nouvelle expérience permettant aux vendeurs de proposer et de gérer la location de vélos,",
     "mise en production de l'expérience Location sur quelques magasins pilotes."
