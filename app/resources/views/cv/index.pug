@@ -10,7 +10,7 @@ block content
 
   .cv
     .row
-      .col-3.text-end
+      .col-3.text-end.d-flex.justify-content-end
         img#photo.d-none.d-print-none.d-sm-inline.align-self-center(src="cv/profile-bguina.png")
 
       #header.col-12.col-print-6.col-sm-6
@@ -18,7 +18,7 @@ block content
         h2=__('title')
         h5=__('subtitle')
 
-      .col-12.col-print-3.col-md-3.align-middle
+      .col-12.col-print-3.col-sm-3.d-sm-flex.align-items-center
         include info.pug
 
     if __('profile')[0]

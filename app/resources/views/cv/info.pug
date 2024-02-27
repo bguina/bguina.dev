@@ -1,25 +1,25 @@
 #info.row.d-print-inline.d-md-inline
 
   if __('availability') !== ""
-    h6(title=__('availability_title') data-nosnippet).col-6.col-print-12.col-sm-6.col-md-12
+    h6(title=__('availability_title') data-nosnippet).col-6.col-print-12.col-sm-12.text-center.text-sm-start
       span.material-icons-sharp more_time
       =' ' + __('availability')
 
-  h6(title=__('sites_title')).col-6.col-print-12.col-sm-6.col-md-12
+  h6(title=__('sites_title')).col-6.col-print-12.col-sm-12.text-center.text-sm-start
     span.material-icons-sharp location_city
     =' ' + __('sites')
 
-  h6(title=__('email_title')).col-6.col-print-12.col-sm-6.col-md-12
+  h6(title=__('email_title')).col-6.col-print-12.col-sm-12.text-center.text-sm-start
     a.text-body.text-decoration-none(href="mailto:"+__('email'))
       span.material-icons-sharp mail_outline
       =' ' + __('email')
 
-  h6(data-nosnippet).col-6.col-print-12.col-sm-6.col-md-12.d-none.d-print-block
+  h6(data-nosnippet).col-6.col-print-12.col-sm-12.d-none.d-print-block.text-center.text-sm-start
     span.material-icons-sharp language
     =' https://' + __('domain')
 
   each link in __('links')
-    h6.col-6.col-print-12.col-sm-6.col-md-12.d-print-none
+    h6.col-6.col-print-12.col-sm-12.d-print-none.text-center.text-sm-start
       a.text-body.text-decoration-none(href=link.url title=link.title)
         img.icon(src="/cv/" + link.icon)
         =' ' + link.label + ' '
