@@ -29,10 +29,6 @@
       "label": "Express"
     },
     {
-      "icon": "typescript.webp",
-      "label": "Typescript"
-    },
-    {
       "icon": "vuejs.png",
       "label": "VueJS"
     },
@@ -51,10 +47,6 @@
     {
       "icon": "cpp.webp",
       "label": "C++"
-    },
-    {
-      "icon": "c-sharp.png",
-      "label": "C#"
     },
     {
       "icon": "qt.webp",
