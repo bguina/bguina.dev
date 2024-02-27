@@ -3,7 +3,7 @@
  "domain": "bguina.dev",
  "description": "",
  "name": "Benoit Guina",
- "title": "Développeur Logiciel",
+ "title": "Développeur logiciel",
  "subtitle": "8 ans de profession, 20 ans de passion",
  "experiences_header": "Expérience professionnelle",
  "skills_header": "Compétences",
@@ -42,7 +42,7 @@
  "experiences": [
   {
    "startdate": "Décembre 2023",
-   "enddate": "Aujourd'hui",
+   "enddate": "Février 2024",
    "title": "Développeur Back-end",
    "subtitle": "en freelance pour ID4IT",
    "intro": "Développements orientés tests de services permettant l'hypervision bâtimentaire 3D.",
